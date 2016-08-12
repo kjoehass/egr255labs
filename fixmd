@@ -1,0 +1,7 @@
+#!/usr/bin/perl -p -i.bak
+# vim:syntax=perl:
+#
+#
+# Parse the lines of the file and process them...
+#
+s/ *style="width: *[2-9][0-9]%;*"//;

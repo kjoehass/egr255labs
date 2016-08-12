@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: fig2dev Version 3.2 Patchlevel 5e -->
+
+<!-- CreationDate: Tue Jul 12 08:55:15 2016 -->
+
+<!-- Magnification: 1.000 -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="6.4334331in"
+   height="5.1884131in"
+   viewBox="1188 588 7683.3567 6251.0002"
+   id="svg4758"
+   version="1.1"
+   inkscape:version="0.91 r"
+   sodipodi:docname="ScopeGraticule.svg">
+  <metadata
+     id="metadata5070">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5068" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview5066"
+     showgrid="false"
+     inkscape:zoom="0.51764706"
+     inkscape:cx="262.51098"
+     inkscape:cy="170.75132"
+     inkscape:current-layer="svg4758"
+     fit-margin-top="0.1"
+     fit-margin-right="0.1"
+     fit-margin-bottom="0.1"
+     fit-margin-left="0.1" />
+  <g
+     id="ScopeGraticule"
+     inkscape:label="#g6440"
+     transform="translate(55.671134,-4103.2998)">
+    <rect
+       x="1200"
+       y="10066.8"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4762" />
+    <rect
+       x="1950"
+       y="10066.8"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4764" />
+    <rect
+       x="3450"
+       y="10066.8"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4766" />
+    <rect
+       x="4200"
+       y="10066.8"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4768" />
+    <rect
+       x="4950"
+       y="10066.8"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4770" />
+    <rect
+       x="5700"
+       y="10066.8"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4772" />
+    <rect
+       x="6450"
+       y="10066.8"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4774" />
+    <rect
+       x="7200"
+       y="10066.8"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4776" />
+    <rect
+       x="7950"
+       y="10066.8"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4778" />
+    <rect
+       x="2700"
+       y="10066.8"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4780" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,6000 5025,6000 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4782" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,6150 5025,6150 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4784" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,6300 5025,6300 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4786" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,6450 5025,6450 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4788" />
+    <rect
+       x="1200"
+       y="9316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4790" />
+    <rect
+       x="1950"
+       y="9316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4792" />
+    <rect
+       x="3450"
+       y="9316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4794" />
+    <rect
+       x="4200"
+       y="9316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4796" />
+    <rect
+       x="4950"
+       y="9316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4798" />
+    <rect
+       x="5700"
+       y="9316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4800" />
+    <rect
+       x="6450"
+       y="9316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4802" />
+    <rect
+       x="7200"
+       y="9316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4804" />
+    <rect
+       x="7950"
+       y="9316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4806" />
+    <rect
+       x="2700"
+       y="9316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4808" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,5250 5025,5250 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4810" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,5400 5025,5400 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4812" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,5550 5025,5550 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4814" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,5700 5025,5700 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4816" />
+    <rect
+       x="1200"
+       y="7816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4818" />
+    <rect
+       x="1950"
+       y="7816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4820" />
+    <rect
+       x="3450"
+       y="7816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4822" />
+    <rect
+       x="4200"
+       y="7816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4824" />
+    <rect
+       x="4950"
+       y="7816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4826" />
+    <rect
+       x="5700"
+       y="7816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4828" />
+    <rect
+       x="6450"
+       y="7816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4830" />
+    <rect
+       x="7200"
+       y="7816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4832" />
+    <rect
+       x="7950"
+       y="7816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4834" />
+    <rect
+       x="2700"
+       y="7816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4836" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,3750 5025,3750 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4838" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,3900 5025,3900 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4840" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,4050 5025,4050 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4842" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,4200 5025,4200 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4844" />
+    <rect
+       x="1200"
+       y="8566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4846" />
+    <rect
+       x="1950"
+       y="8566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4848" />
+    <rect
+       x="3450"
+       y="8566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4850" />
+    <rect
+       x="4200"
+       y="8566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4852" />
+    <rect
+       x="4950"
+       y="8566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4854" />
+    <rect
+       x="5700"
+       y="8566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4856" />
+    <rect
+       x="6450"
+       y="8566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4858" />
+    <rect
+       x="7200"
+       y="8566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4860" />
+    <rect
+       x="7950"
+       y="8566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4862" />
+    <rect
+       x="2700"
+       y="8566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4864" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,4500 5025,4500 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4866" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,4650 5025,4650 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4868" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,4800 5025,4800 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4870" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,4950 5025,4950 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4872" />
+    <rect
+       x="1200"
+       y="6316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4874" />
+    <rect
+       x="1950"
+       y="6316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4876" />
+    <rect
+       x="3450"
+       y="6316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4878" />
+    <rect
+       x="4200"
+       y="6316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4880" />
+    <rect
+       x="4950"
+       y="6316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4882" />
+    <rect
+       x="5700"
+       y="6316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4884" />
+    <rect
+       x="6450"
+       y="6316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4886" />
+    <rect
+       x="7200"
+       y="6316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4888" />
+    <rect
+       x="7950"
+       y="6316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4890" />
+    <rect
+       x="2700"
+       y="6316.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4892" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,2250 5025,2250 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4894" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,2400 5025,2400 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4896" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,2550 5025,2550 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4898" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,2700 5025,2700 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4900" />
+    <rect
+       x="1200"
+       y="5566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4902" />
+    <rect
+       x="1950"
+       y="5566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4904" />
+    <rect
+       x="3450"
+       y="5566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4906" />
+    <rect
+       x="4200"
+       y="5566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4908" />
+    <rect
+       x="4950"
+       y="5566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4910" />
+    <rect
+       x="5700"
+       y="5566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4912" />
+    <rect
+       x="6450"
+       y="5566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4914" />
+    <rect
+       x="7200"
+       y="5566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4916" />
+    <rect
+       x="7950"
+       y="5566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4918" />
+    <rect
+       x="2700"
+       y="5566.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4920" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,1500 5025,1500 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4922" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,1650 5025,1650 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4924" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,1800 5025,1800 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4926" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,1950 5025,1950 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4928" />
+    <rect
+       x="1200"
+       y="4816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4930" />
+    <rect
+       x="1950"
+       y="4816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4932" />
+    <rect
+       x="3450"
+       y="4816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4934" />
+    <rect
+       x="4200"
+       y="4816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4936" />
+    <rect
+       x="4950"
+       y="4816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4938" />
+    <rect
+       x="5700"
+       y="4816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4940" />
+    <rect
+       x="6450"
+       y="4816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4942" />
+    <rect
+       x="7200"
+       y="4816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4944" />
+    <rect
+       x="7950"
+       y="4816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4946" />
+    <rect
+       x="2700"
+       y="4816.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4948" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,750 5025,750 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4950" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,900 5025,900 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4952" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,1050 5025,1050 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4954" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,1200 5025,1200 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4956" />
+    <rect
+       x="1200"
+       y="7066.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4958" />
+    <rect
+       x="1950"
+       y="7066.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4960" />
+    <rect
+       x="3450"
+       y="7066.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4962" />
+    <rect
+       x="4200"
+       y="7066.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4964" />
+    <rect
+       x="4950"
+       y="7066.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4966" />
+    <rect
+       x="5700"
+       y="7066.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4968" />
+    <rect
+       x="6450"
+       y="7066.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4970" />
+    <rect
+       x="7200"
+       y="7066.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4972" />
+    <rect
+       x="7950"
+       y="7066.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4974" />
+    <rect
+       x="2700"
+       y="7066.7998"
+       width="750"
+       height="750"
+       rx="0"
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect4976" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,3000 5025,3000 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4978" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,3150 5025,3150 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4980" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,3300 5025,3300 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4982" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4875,3450 5025,3450 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4984" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="1350,3525 1350,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4986" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="1500,3525 1500,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4988" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="1650,3525 1650,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4990" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="1800,3525 1800,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4992" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="2100,3525 2100,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4994" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="2250,3525 2250,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4996" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="2400,3525 2400,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline4998" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="2550,3525 2550,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5000" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="2850,3525 2850,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5002" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="3000,3525 3000,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5004" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="3150,3525 3150,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5006" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="3300,3525 3300,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5008" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="3600,3525 3600,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5010" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="3750,3525 3750,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5012" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="3900,3525 3900,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5014" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4050,3525 4050,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5016" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4350,3525 4350,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5018" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4500,3525 4500,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5020" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4650,3525 4650,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5022" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="4800,3525 4800,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5024" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="5100,3525 5100,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5026" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="5250,3525 5250,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5028" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="5400,3525 5400,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5030" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="5550,3525 5550,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5032" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="5850,3525 5850,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5034" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="6000,3525 6000,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5036" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="6150,3525 6150,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5038" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="6300,3525 6300,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5040" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="6600,3525 6600,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5042" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="6750,3525 6750,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5044" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="6900,3525 6900,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5046" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="7050,3525 7050,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5048" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="7350,3525 7350,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5050" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="7500,3525 7500,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5052" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="7650,3525 7650,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5054" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="7800,3525 7800,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5056" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="8100,3525 8100,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5058" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="8250,3525 8250,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5060" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="8400,3525 8400,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5062" />
+    <polyline
+       transform="translate(0,4216.7999)"
+       points="8550,3525 8550,3675 "
+       style="fill:none;stroke:#414541;stroke-width:10.03999996;stroke-linecap:butt;stroke-linejoin:miter"
+       id="polyline5064" />
+  </g>
+</svg>

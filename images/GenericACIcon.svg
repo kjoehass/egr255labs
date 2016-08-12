@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12pt" height="7pt" viewBox="0 0 12 7" version="1.2">
+<defs>
+<clipPath id="clip1">
+  <rect width="12" height="7"/>
+</clipPath>
+<g id="surface4" clip-path="url(#clip1)">
+<path style="fill:none;stroke-width:1.6;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M -33.601562 -35.452271 C -33.613281 -34.553834 -34.128906 -33.733521 -34.9375 -33.335084 C -35.746094 -32.936646 -36.707031 -33.02649 -37.429688 -33.561646 C -38.152344 -34.096802 -38.515625 -34.99524 -38.367188 -35.881959 " transform="matrix(-1,0,0,-1,-32,-31.889771)"/>
+<path style="fill:none;stroke-width:1.6;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 43.199219 35.52649 C 43.1875 36.424927 42.667969 37.241334 41.863281 37.639771 C 41.054688 38.038209 40.09375 37.952271 39.371094 37.417115 C 38.648438 36.878052 38.285156 35.983521 38.433594 35.096802 " transform="matrix(1,0,0,1,-32,-31.889771)"/>
+</g>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface4"/>
+</g>
+</svg>

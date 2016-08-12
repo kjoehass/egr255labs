@@ -1,0 +1,19 @@
+# Lines starting with '#' are considered comments.
+# Ignore any file named foo.txt.
+foo.txt
+# Ignore these files
+*.epub
+*.epub3
+*.css
+*.template
+*.asc
+*.MD
+*.txt
+*.yaml
+*.svgz
+*.bak
+.*.bak
+fix_md
+in-header.html
+# except readme
+!README.md
