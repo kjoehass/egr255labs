@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+      p {
+          line-height      : 130%;
+      }
+      code {
+          font-family      : "Courier New", Courier, monospace;
+          font-size        : 100%;
+      }
+      img {
+          vertical-align   : baseline;
+          margin           : 0;
+          padding          : 0;
+          border           : none;
+      }
+      img.displayed {
+          max-width        : 100%;
+          height           : auto;
+          display          : block;
+          margin-left      : auto;
+          margin-right     : auto;
+      }
+      img.margin {
+              float: left;
+      }
+      table {
+          margin-left      : auto;
+          margin-right     : auto;
+          margin-bottom    : 24px;
+          border-spacing   : 0;
+          border-bottom    : 2px solid black;
+          border-top       : 2px solid black;}
+      table th {
+          padding          : 3px 10px;
+          background-color : white;
+          border-top       : none;
+          border-left      : none;
+          border-right     : none;
+          border-bottom    : 1px solid black;
+      }
+      table td {
+          padding          : 3px 10px;
+          border-top       : none;
+          border-left      : none;
+          border-bottom    : none;
+          border-right     : none;
+      }
+  </style>
+</head>
+<body>
+<h1 id="steady-state-rc-circuits">Steady-state RC Circuits</h1>
+<p>The term &quot;steady state&quot; refers to a circuit that is excited by a <strong>periodic, sinusoidal</strong> voltage or current. The resulting voltages and currents are not constant, as they would be in the &quot;d.c.&quot; case, but the pattern of voltage or current as a function of time repeats forever. If the circuit is linear then we know that all of the voltages and currents will also be sinusoids that have the same period as the voltage or current sources that excite the circuit. Since all of the voltages and currents have the same period they must also have the same frequency.</p>
+<p>When describing the steady-state <strong>response</strong> of a circuit at some given frequency we only need to specify two characteristics for each voltage or current: its <strong>amplitude</strong> and its <strong>phase shift</strong>. The amplitude is just the magnitude of the voltage or current, expressed as a peak value, a peak-to-peak value, or an RMS value.</p>
+<p>The <strong>phase shift</strong> of the circuit response is how we describe the delay of the response from the excitation. This delay can be expressed as an actual time value in seconds but it is often more useful to specify it as a fraction of the signal's period. This fraction usually is given in units of <strong>degrees</strong>, noting that one cycle (period) of the waveform corresponds to 360&#176;.</p>
+<h2 id="introduction">Introduction</h2>
+<p>In this laboratory procedure you will investigate the steady-state behavior of first-order circuits that comprise a resistor and a capacitor.</p>
+<h3 id="procedure">Procedure</h3>
+<ol type="1">
+<li><p>Construct the RC circuit shown below.</p>
+<p><img src="images/Lab9Fig1.svg" alt="Schematic of function generator and series RC circuit" class="displayed" />&#160;</p></li>
+<li><p>Connect an oscilloscope probe from Channel 1 of the oscilloscope so that you can observe the output of the function generator (the point where the function generator connects to the resistor).<br />
+<img src="images/GenericWarning11.svg" alt="Warning" /> Remember that (for most oscilloscopes) the black alligator clips from all of the &#8217;scope probes must be connected to ground.</p></li>
+<li><p>Set the function generator to provide a sine wave output with a peak-to-peak magnitude of about 2&#160;V and a frequency of about 1&#160;kHz.</p></li>
+<li><p>Connect a <strong>second</strong> oscilloscope probe from Channel 2 of the oscilloscope so that you can observe the signal at the point where the capacitor and resistor are connected together.</p></li>
+<li><p>Configure both oscilloscope channels so that they are a.c.&#160;coupled. If the oscilloscope has a &quot;bandwidth limiting&quot; setting, enable it for both channels. If you are using 10:1 scope probes and they are not automatically recognized by the oscilloscope then you should manually set both input channels for a <code>10X</code> or <code>10:1</code> probe.</p></li>
+<li><p>Set the vertical scale of both oscilloscope channels to 500&#160;mV per division. Adjust the horizontal scale (time per division) so you see at least one complete cycle of both waveforms, but no more than three complete cycles. Adjust the vertical position of both waveforms so that their ground level is centered vertically.</p>
+<p><img src="images/Lab9Fig2.svg" alt="Two sine waves displayed on oscilloscope" class="displayed" />&#160;</p>
+<p>Your oscilloscope display should resemble the image shown above, although the colors of the traces may differ. The peak-to-peak voltages and the phase shift between the signals may also be different, but you should see two sinusoidal signals that are vertically centered on the display.</p>
+<p>If the oscilloscope display is not stable then you may need to configure the <strong>sweep trigger</strong>. Configure the oscilloscope to trigger on Channel 1 with a trigger level of about 0&#160;V.</p></li>
+<li><p><img src="images/GenericWarning11.svg" alt="Warning" /> For the best results, <strong>do not</strong> use the oscilloscope's <code>Auto Set</code> function during the rest of the procedure. If you do, repeat the configuration steps above.</p></li>
+<li><p>Press the <code>Math Menu</code> button on the oscilloscope to display the waveform math controls. Select the subtraction operation and set the sources option to display <code>CH1-CH2</code>. Adjust the position and vertical scale of the resulting waveform just as you did for the normal oscilloscope channels.</p></li>
+<li><p>Note that the <code>CH1-CH2</code> waveform is the voltage across the resistor. Ohm's Law states that if you know the voltage across a resistor you can determine the current through the resistor, so the waveform for the current through the resistor (and capacitor) is the same as the waveform for the voltage across the resistor, with a scale factor of the resistance value. <strong>Compute</strong> and <strong>record</strong> the vertical scale of the computed resistor voltage waveform in volts per division and the scale of the corresponding resistor current in amperes per division.</p></li>
+<li><p>Use the oscilloscope to determine the time shift between the current waveform and the capacitor voltage (on Channel 2). Make a note of the point where the current waveform crosses the horizontal line at the center of the screen, then note the horizontal distance from this point to the nearest point where the capacitor voltage waveform crosses the same horizontal line in the same direction (rising or falling). Multiplying this horizontal distance (in divisions) by the horizontal scale (in time per division) gives the time shift.</p>
+<p>For example, in the image above we note the points where the two waveforms are falling and cross the horizontal axis. The horizontal distance between the points is about 1.6 divisions. If the horizontal scale is 5&#160;&#181;s/div (for example) then the time difference between the two waveforms would be 8&#160;&#181;s.</p>
+<p>Record the observed time difference for the two waveforms. Calculate and record the corresponding phase difference (in degrees) between the current and voltage.</p></li>
+<li><p>Sketch the capacitor voltage and current waveforms for at least one complete cycle, recording the voltage scale and time scale values. Do <strong>not</strong> sketch the function generator output (Channel 1). Indicate the ground (0&#160;V) level for the signals on your sketch. Clearly label the sketched waveforms to indicate which waveform is the current and which is the voltage.</p></li>
+<li><p>Use a multimeter to measure the RMS voltage of the function generator output, the voltage across the resistor, and the voltage across the capacitor. <strong>Record</strong> these three voltage measurements.</p></li>
+<li><p>Based on the <strong>voltmeter</strong> measurements, does it appear that KVL is satisfied for this circuit? <strong>Explain</strong> your observations.</p></li>
+<li><p>Change the function generator frequency to 2&#160;kHz.</p></li>
+<li><p>Use the oscilloscope to determine the difference in time between the current waveform and the capacitor voltage. <strong>Record</strong> this time value. <strong>Calculate</strong> and <strong>record</strong> the phase difference (in degrees) between the current and voltage. Remember that the period has changed since the first phase shift calculation.</p></li>
+<li><p>Use a multimeter to measure the RMS voltage of the function generator output, the voltage across the resistor, and the voltage across the capacitor. <strong>Record</strong> these three voltage measurements.</p></li>
+<li><p><strong>Describe</strong> how your measurements and observations were different at the two function generator frequencies, and how they were the same.</p></li>
+</ol>
+<p><img src="images/CC_BY_SA_40.png" alt="&quot;Creative Commons Attribution ShareAlike License&quot;" style="width: 10%" /> K. Joseph Hass, 2016</p>
+</body>
+</html>

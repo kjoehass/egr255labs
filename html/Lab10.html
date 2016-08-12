@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+      p {
+          line-height      : 130%;
+      }
+      code {
+          font-family      : "Courier New", Courier, monospace;
+          font-size        : 100%;
+      }
+      img {
+          vertical-align   : baseline;
+          margin           : 0;
+          padding          : 0;
+          border           : none;
+      }
+      img.displayed {
+          max-width        : 100%;
+          height           : auto;
+          display          : block;
+          margin-left      : auto;
+          margin-right     : auto;
+      }
+      img.margin {
+              float: left;
+      }
+      table {
+          margin-left      : auto;
+          margin-right     : auto;
+          margin-bottom    : 24px;
+          border-spacing   : 0;
+          border-bottom    : 2px solid black;
+          border-top       : 2px solid black;}
+      table th {
+          padding          : 3px 10px;
+          background-color : white;
+          border-top       : none;
+          border-left      : none;
+          border-right     : none;
+          border-bottom    : 1px solid black;
+      }
+      table td {
+          padding          : 3px 10px;
+          border-top       : none;
+          border-left      : none;
+          border-bottom    : none;
+          border-right     : none;
+      }
+  </style>
+</head>
+<body>
+<h1 id="resonance-in-rlc-circuits">Resonance in RLC Circuits</h1>
+<p>In this laboratory procedure you will investigate resonance in second-order RLC circuits. At the <em>resonant frequency</em> the impedance of the inductor and capacitor are equal and 180&#160;out of phase, so they cancel each other and the circuit appears to be purely resistive.</p>
+<h2 id="part-1">Part 1</h2>
+<h3 id="procedure">Procedure</h3>
+<ol type="1">
+<li><p><strong>Measure</strong> and <strong>record</strong> the actual resistance values of the 100&#160;&#937; resistor (<em>R</em><sub>100</sub>), the 47&#160;&#937; resistor (<em>R</em><sub>47</sub>), and the inductor (<em>R</em><sub>L</sub>).</p></li>
+<li><p>Construct the series RLC circuit shown below. Note that the 100&#160;&#937; resistor is used to lower the effective Th&#233;venin resistance of the function generator.</p>
+<p><img src="images/Lab10Fig1.svg" alt="Schematic of series RLC circuit" class="displayed" />&#160;</p></li>
+<li><p><strong>Calculate</strong> and <strong>record</strong> the resonant frequency of the circuit in hertz (<em>f</em><sub>R</sub>). The resonant frequency is the frequency that causes the sum of the inductor impedance and capacitor impedance to be zero.</p>
+<p><span class="math display">\[\omega_R = \frac{1}{\sqrt{LC}}\]</span></p></li>
+<li><p><strong>Calculate</strong> and <strong>record</strong> the total series resistance of the circuit. First calculate the effective Th&#233;venin resistance of the signal generator, which is the measured value of <em>R</em><sub>100</sub> in parallel with the actual output resistance of the signal generator. Add this value to the measured values of <em>R</em><sub>47</sub> and <em>R</em><sub>L</sub> to obtain the total resistance, <em>R</em><sub>T</sub>.</p></li>
+<li><p><strong>Calculate</strong> and <strong>record</strong> the quality factor, <em>Q</em>, of the circuit.</p>
+<p><span class="math display">\[Q = \frac{1}{R_T} \sqrt{\frac{L}{C}}\]</span></p></li>
+<li><p><strong>Calculate</strong> and <strong>record</strong> the bandwidth <em>BW</em>, of the circuit.</p>
+<p><span class="math display">\[BW = \frac{f_R}{Q}\]</span></p></li>
+<li><p>Connect an oscilloscope probe from Channel 1 of the oscilloscope to the output of the function generator.</p></li>
+<li><p>Set the function generator to give a sine wave output with a peak-to-peak magnitude of 2&#160;V at the calculated resonant frequency.</p></li>
+<li><p>Connect a <strong>second</strong> oscilloscope probe from Channel 2 of the oscilloscope to the point where the inductor and 47&#160;&#937; resistor are connected together.<br />
+<img src="images/GenericWarning11.svg" alt="Warning" /> <strong>Both of the black alligator clips from the &#8217;scope probes must be connected to ground.</strong></p></li>
+<li><p>Configure both oscilloscope channels so that they are a.c.&#160;coupled, bandwidth limiting is turned on, and the probe is set to 10X.</p></li>
+<li><p>Set the vertical scale of both oscilloscope channels to 500&#160;mV per division. Adjust the horizontal scale (time per division) so you see at least one complete cycle of both waveforms, but no more than three complete cycles. Adjust the vertical position of both waveforms so that their ground level is centered vertically.</p></li>
+<li><p>For the best results, <strong>do not</strong> use the oscilloscope&#8217;s <code>Auto Set</code> function during the rest of the procedure. If you do, repeat the configuration steps above.</p></li>
+<li><p>Slowly adjust the function generator frequency until the voltage across the 47&#160;&#937; resistor reaches a <strong>maximum</strong> value. <strong>Record</strong> the peak-to-peak output voltage of the function generator, the peak-to-peak voltage across the resistor, and the actual frequency of the signal.</p></li>
+<li><p>Is the observed resonant frequency within 10% of the calculated value? If not, resolve the discrepancy before moving on.</p></li>
+<li><p>Use the DMM to measure the RMS voltage across the capacitor and inductor. <strong>Record</strong> the measured values. At resonance these voltages should have an equal magnitude but be 180&#176; out of phase. <strong>Explain</strong> whether your observations are consistent with that expectation.</p></li>
+<li><p>Use the DMM to measure the RMS voltage across the 47&#160;&#937; resistor and the 100&#160;&#937; resistor. <strong>Record</strong> your measurements.</p></li>
+<li><p>At d.c.&#160;the sum of the voltages across the capacitor, inductor, and 47&#160;&#937; resistor would equal the voltage across the 100&#160;&#937; resistor. Is that true for the a.c. steady-state resonant case here? <strong>Explain</strong> your answer.</p></li>
+<li><p><strong>Increase</strong> the signal generator frequency (above the resonant frequency) until the voltage across the resistor falls to about 71% of its value at resonance. <strong>Record</strong> this frequency.</p></li>
+<li><p><strong>Decrease</strong> the signal generator frequency (below the resonant frequency) until the voltage across the resistor falls to about 71% of its value at resonance. <strong>Record</strong> this frequency.</p></li>
+<li><p>The <strong>difference</strong> between the two frequencies where the resistor voltage falls to 70.7% of its value at resonance is defined to be the <em>bandwidth</em> of the resonant circuit. Calculate and <strong>record</strong> the measured bandwidth.</p></li>
+<li><p>Is the observed bandwidth within 10% of the calculated value? <strong>Record</strong> your observations.</p></li>
+</ol>
+<p><img src="images/CC_BY_SA_40.png" alt="&quot;Creative Commons Attribution ShareAlike License&quot;" style="width: 10%" /> K. Joseph Hass, 2016</p>
+</body>
+</html>

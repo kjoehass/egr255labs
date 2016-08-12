@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+      p {
+          line-height      : 130%;
+      }
+      code {
+          font-family      : "Courier New", Courier, monospace;
+          font-size        : 100%;
+      }
+      img {
+          vertical-align   : baseline;
+          margin           : 0;
+          padding          : 0;
+          border           : none;
+      }
+      img.displayed {
+          max-width        : 100%;
+          height           : auto;
+          display          : block;
+          margin-left      : auto;
+          margin-right     : auto;
+      }
+      img.margin {
+              float: left;
+      }
+      table {
+          margin-left      : auto;
+          margin-right     : auto;
+          margin-bottom    : 24px;
+          border-spacing   : 0;
+          border-bottom    : 2px solid black;
+          border-top       : 2px solid black;}
+      table th {
+          padding          : 3px 10px;
+          background-color : white;
+          border-top       : none;
+          border-left      : none;
+          border-right     : none;
+          border-bottom    : 1px solid black;
+      }
+      table td {
+          padding          : 3px 10px;
+          border-top       : none;
+          border-left      : none;
+          border-bottom    : none;
+          border-right     : none;
+      }
+  </style>
+</head>
+<body>
+<h1 id="superposition">Superposition</h1>
+<p>The principle of superposition says that the <strong>response</strong> of a linear system to multiple independent <strong>stimuli</strong> is simply equal to the sum of the system's responses to each stimulus separately. This laboratory procedure demonstrates superposition in a simple circuit. The stimuli in the circuit are two simple voltage sources, and the response of the circuit is the voltages across several resistors.</p>
+<p>Along the way, this procedure also gives you a chance to practice using the resistor color code and measuring resistance. You will use Kirchhoff's Voltage Law to verify your voltage measurements as you proceed.</p>
+<h2 id="assembling-verifying-the-test-circuit">Assembling &amp; Verifying the Test Circuit</h2>
+<h3 id="procedure">Procedure</h3>
+<ol type="1">
+<li><p>Select four resistors with four different values between 1&#160;k&#937; and 10&#160;k&#937;. These resistors will be named R1 through R4.</p></li>
+<li><p>Record the colors of the bands on each resistor, including the band (if any) that indicates the resistor's tolerance. Use the resistor color code to determine the marked resistance value for each resistor and record these values.</p></li>
+<li><p>Use your multimeter to measure the actual value of the resistors. Record these values with (at least) three significant digits.</p></li>
+<li><p><img src="images/GenericCheck.svg" alt="Verify" /> Verify that the measured value agrees with the marked value of each resistor, within the tolerance value indicated by the color bands. If not, repeat the previous two steps.</p></li>
+<li><p>Construct the circuit shown below. Be careful to orient the polarity of the voltage sources as shown in schematic. The voltages of V1 and V2 should be between 5&#8239;V and 12&#8239;V and they may have the same voltage.<br />
+<img src="images/GenericWarning11.svg" alt="Warning" /> Note that the two voltage sources, V1 and V2, must be <strong>isolated</strong> from each other, which means that they <strong>do not</strong> have a common negative terminal. If you have two isolated bench power supplies you can use them for V1 and V2. You can also use a 9-V battery as one or both of the voltage sources.</p>
+<p><img src="images/Lab4Fig1.svg" alt="Superposition lab circuit" class="displayed" />&#160;</p></li>
+<li><p>Measure and record the voltage across each element, using the voltage definitions shown in the figure below. Provide at least three significant digits for each measurement.<br />
+<img src="images/GenericWarning11.svg" alt="Warning" /> If you use an adjustable voltage source for V1 or V2 it is <strong>very important</strong> that you do not change the voltage setting after this point in the procedure.</p>
+<p><img src="images/Lab4Fig2.svg" alt="Superposition lab circuit" class="displayed" />&#160;</p>
+<p>Note that the element voltages can also be described in terms of the node names:</p>
+<ul>
+<li><em>V</em><sub>V1</sub> = <em>V</em><sub>AC</sub></li>
+<li><em>V</em><sub>V2</sub> = <em>V</em><sub>ED</sub></li>
+<li><em>V</em><sub>R1</sub> = <em>V</em><sub>AB</sub></li>
+<li><em>V</em><sub>R2</sub> = <em>V</em><sub>CB</sub></li>
+<li><em>V</em><sub>R3</sub> = <em>V</em><sub>CE</sub></li>
+<li><em>V</em><sub>R4</sub> = <em>V</em><sub>BD</sub></li>
+</ul></li>
+<li><p>Verify your voltage measurements using Kirchhoff's Voltage Law around the upper loop, which includes V1, R1, and R2. Proceeding clockwise around the loop we can calculate the sum of the voltages as</p>
+<p><em>V</em><sub>SUM</sub> = <em>V</em><sub>CA</sub> + <em>V</em><sub>AB</sub> + <em>V</em><sub>BC</sub></p>
+<p>Replacing the node-pair voltages with the defined element voltages, and changing addition to subtraction where necessary, gives</p>
+<p><em>V</em><sub>SUM</sub> = -<em>V</em><sub>V1</sub> + <em>V</em><sub>R1</sub> - <em>V</em><sub>R2</sub></p>
+<p>Calculate <em>V</em><sub>SUM</sub> and explain whether KVL is satisfied around this loop, given that the voltage measurements have a resolution of about &#177;10&#8239;mV.</p></li>
+<li><p>Verify the voltage measurements using KVL around the lower loop, which includes V2, R2, R3, and R4.<br />
+<img src="images/GenericCheck.svg" alt="checkmark" /> If KVL is not satisfied, and you find that <em>V</em><sub>V2</sub> is essentially the same as <em>V</em><sub>R3</sub>, then it may be that the negative terminals of the two voltages sources are not actually isolated.</p></li>
+<li><p>Verify the voltage measurements using KVL around the outer loop, which includes V1, V2, R1, R3, and R4.</p></li>
+<li><p><img src="images/GenericCheck.svg" alt="checkmark" /> Do not proceed unless you can show that KVL is satisfied around all three of the loops in this circuit. Of course, your voltmeter is not an ideal meter and it is reasonable that the sum of the loop voltages might be as large as &#177;50&#8239;mV under the best of circumstances. If the discrepancy between your observations and the expected results is any larger then you should double-check your measurements and the signs of the voltages in your calculations.</p></li>
+</ol>
+<h2 id="demonstrating-superposition">Demonstrating superposition</h2>
+<p>To demonstrate the principle of superposition using the test circuit you need to measure the element voltages that result <strong>independently</strong> from each of the two voltage sources. In other words, you must measure the resistor voltages that occur when <strong>only</strong> V1 is present and then measure the same voltages when <strong>only</strong> V2 is present. According to the principle of superposition, the voltage across each resistor when both voltage sources are present must be simply the sum of the resistor voltages when only one of the sources is present in the circuit.</p>
+<p>It is important that you understand what it means to &quot;remove&quot; a voltage source from the circuit. We can effectively &quot;remove&quot; an independent voltage or current source by setting its voltage or current to zero, so it may be helpful to imagine the process as &quot;zeroing&quot; a source rather than physically removing it.</p>
+<p>Fortunately, there is a simple circuit element that is effectively equivalent to a voltage source of zero volts. Remember that we are actually talking about the voltage <strong>difference</strong> between the two terminals of the zeroed source and saying that this voltage difference is zero. However, this is also a characteristic of an ideal wire: there is no voltage difference between the ends of the wire. So, to &quot;zero&quot; a voltage source in a circuit we can just replace it with a wire.</p>
+<h3 id="procedure-1">Procedure</h3>
+<ol type="1">
+<li><p><img src="images/GenericWarning11.svg" alt="Warning" /> If you use an adjustable voltage source for V2 be very careful not to change the voltage setting during this step.<br />
+Disconnect V2 from the test circuit and replace it with a short wire. As shown in the figure below, this step will effectively combine nodes <strong>D</strong> and <strong>E</strong> into a single node <strong>DE</strong>.<br />
+<img src="images/GenericWarning11.svg" alt="Warning" /> Be careful to completely disconnect V2 from the circuit <strong>before</strong> adding the wire between nodes <strong>D</strong> and <strong>E</strong>.</p>
+<p><img src="images/Lab4Fig4.svg" alt="Superposition lab circuit with V2 removed" class="displayed" />&#160;</p></li>
+<li><p>Measure <em>V</em><sub>V1</sub>, the voltage across V1, and verify that it has not changed by more than 1% from the value you measured earlier, when both voltage sources were present in the circuit.<br />
+<img src="images/GenericCheck.svg" alt="checkmark" /> Do not proceed if <em>V</em><sub>V1</sub> has changed significantly. If you are using a battery for V1 then you made need to replace it with a fresh battery. If you are using an adjustable voltage source for V1 then you may have accidentally changed the voltage setting. In any event, you must return to the beginning of the procedure and repeat the voltage measurements you made with both sources present in the circuit.</p></li>
+<li><p>Carefully measure the voltage across each of the resistors, observing the voltage polarity indicated in the figure above. Note that the names of the these voltages have changed slightly: a single prime symbol has been added to the name of each resistor voltage to indicate that these voltages are measured with <strong>only</strong> V1 active. Record the measured values of <em>V'</em><sub>R1</sub>, <em>V'</em><sub>R2</sub>, <em>V'</em><sub>R3</sub>, and <em>V'</em><sub>R4</sub> with at least three significant digits.</p></li>
+<li><p><img src="images/GenericCheck.svg" alt="checkmark" /> Make sure that KVL is satisfied in the modified circuit by checking the voltages around at least two loops. If you cannot show that KVL is satisfied you should repeat the voltage measurements and calculations.</p></li>
+<li><p>Remove the wire that you added between nodes <strong>D</strong> and <strong>E</strong>. Reconnect the voltage source V1 between these two nodes.</p></li>
+<li><p><img src="images/GenericWarning11.svg" alt="Warning" /> If you use an adjustable voltage source for V1 be very careful not to change the voltage setting during this step.<br />
+Disconnect V1 from the test circuit and replace it with a short wire. As shown in the figure below, this step will effectively combine nodes <strong>A</strong> and <strong>C</strong> into a single node <strong>AC</strong>.<br />
+<img src="images/Lab4Fig3.svg" alt="Superposition lab circuit with V1 removed" class="displayed" />&#160;</p></li>
+<li><p>Measure <em>V</em><sub>V2</sub>, the voltage across V2, and verify that it has not changed by more than 1% from the value you measured earlier, when both voltage sources were present in the circuit.<br />
+<img src="images/GenericCheck.svg" alt="checkmark" /> Do not proceed if <em>V</em><sub>V2</sub> has changed significantly. If you are using a battery for V2 then you made need to replace it with a fresh battery. If you are using an adjustable voltage source for V2 then you may have accidentally changed the voltage setting. In any event, you must return to the beginning of the procedure and repeat the voltage measurements you made with both sources present in the circuit.</p></li>
+<li><p>Carefully measure the voltage across each of the resistors, observing the voltage polarity indicated in the figure above. Note that the names of the these voltages have changed slightly: a double prime symbol has been added to the name of each resistor voltage to indicate that these voltages are measured with <strong>only</strong> V2 active. Record the measured values of <em>V''</em><sub>R1</sub>, <em>V''</em><sub>R2</sub>, <em>V''</em><sub>R3</sub>, and <em>V''</em><sub>R4</sub> with at least three significant digits.</p></li>
+<li><p><img src="images/GenericCheck.svg" alt="checkmark" /> Make sure that KVL is satisfied in the modified circuit by checking the voltages around at least two loops. If you cannot show that KVL is satisfied you should repeat the voltage measurements and calculations.</p></li>
+<li><p>Calculate the sum of the single-prime voltage and the double-prime voltage for each resistor, and compare that result to the original (unprimed) voltage measurement. For example, how does <em>V'</em><sub>R1</sub>+<em>V''</em><sub>R1</sub> compare to <em>V</em><sub>R1</sub>? These two values should be the same, within the expected amount of uncertainty in your measurements (less than 5%).<br />
+<img src="images/GenericCheck.svg" alt="checkmark" /> If the difference is greater than 5% for any resistor, go back and check your work.</p></li>
+</ol>
+<p><img src="images/CC_BY_SA_40.png" alt="&quot;Creative Commons Attribution ShareAlike License&quot;" style="width:10.0%" /> K. Joseph Hass, 2016</p>
+</body>
+</html>

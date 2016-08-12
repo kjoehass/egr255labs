@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+      p {
+          line-height      : 130%;
+      }
+      code {
+          font-family      : "Courier New", Courier, monospace;
+          font-size        : 100%;
+      }
+      img {
+          vertical-align   : baseline;
+          margin           : 0;
+          padding          : 0;
+          border           : none;
+      }
+      img.displayed {
+          max-width        : 100%;
+          height           : auto;
+          display          : block;
+          margin-left      : auto;
+          margin-right     : auto;
+      }
+      img.margin {
+              float: left;
+      }
+      table {
+          margin-left      : auto;
+          margin-right     : auto;
+          margin-bottom    : 24px;
+          border-spacing   : 0;
+          border-bottom    : 2px solid black;
+          border-top       : 2px solid black;}
+      table th {
+          padding          : 3px 10px;
+          background-color : white;
+          border-top       : none;
+          border-left      : none;
+          border-right     : none;
+          border-bottom    : 1px solid black;
+      }
+      table td {
+          padding          : 3px 10px;
+          border-top       : none;
+          border-left      : none;
+          border-bottom    : none;
+          border-right     : none;
+      }
+  </style>
+</head>
+<body>
+<h1 id="operational-amplifier-application">Operational Amplifier Application</h1>
+<p>In this lab you will design and build a typical circuit using an operational amplifier. You will see that op-amp circuits can be used to perform simple mathematical operations in addition to amplifying signals.</p>
+<h2 id="circuit-design">Circuit Design</h2>
+<p>Suppose you have a temperature sensor that provides an analog voltage that is proportional to temperature, with a conversion factor of 10&#160;mV/&#176;C, so 0&#160;&#176;C becomes 0.00&#160;V and 100&#160;&#176;C becomes 1.00&#160;V. Your assignment is to create a circuit that will accept the sensor voltage and convert it to a voltage corresponding to the equivalent Fahrenheit temperature.</p>
+<p>The output voltage should be 0.00&#160;V when the temperature reading corresponds to 0&#160;&#176;F. The voltage output is also <em>negated</em>, so when the sensor temperature corresponds to 100&#160;&#176;F the output voltage should be -1.00&#160;V. In other words, you need the output voltage to have a scale factor of -10&#160;mV/&#176;F.</p>
+<p>Recall that the conversion from &#176;C to &#176;F is <span class="math display">\[T_F = \frac{9}{5}T_C + 32\]</span></p>
+<p>This formula looks very similar to the formula for the gain of a summing amplifier, like the circuit in the figure below: <img src="images/Lab7Fig1.svg" alt="op-amp summing amplifier schematic" class="displayed" />&#160; <span class="math display">\[V_{OUT} = -\biggl( \frac{RF}{RA}V_A + \frac{RF}{RB}V_B \biggr)\]</span></p>
+<p>You can use the voltage from the temperature sensor as <em>V</em><sub><em>A</em></sub>, create some kind of constant voltage for <em>V</em><sub><em>B</em></sub>, and setup the appropriate gain factors.</p>
+<h3 id="procedure">Procedure</h3>
+<ol type="1">
+<li><p>Assume that the voltage from the temperature sensor, <em>V</em><sub><em>C</em></sub>, will be one input to the summing amplifier and the other input will be some constant voltage. The output voltage, <em>V</em><sub><em>F</em></sub>, will be the voltage that represents the sensor temperature in degrees Fahrenheit: <span class="math display">\[V_F = -\biggl(\frac{9}{5}V_C + 0.32\biggr)\]</span></p></li>
+<li><p>Suppose we use a summing amplifier circuit like the one shown below to create <em>V</em><sub>F</sub> from input voltages <em>V</em><sub>C</sub> and <em>V</em><sub>OFF</sub>. Assume that <em>V</em><sub>OFF</sub> is a constant offset voltage of 0.32&#160;V provided by an ideal voltage source. With RF chosen to be 27&#160;k&#937;, determine the appropriate values of RA and RB.</p>
+<p><img src="images/Lab7Fig3.svg" alt="Sensor amplifier schematic" class="displayed" />&#160;</p></li>
+<li><p>You need to use a voltage divider to create <em>V</em><sub>OFF</sub>, the 0.32&#160;V constant offset voltage, and the divider must produce this voltage from the fixed VPS+ supply voltage for the operational amplifier.</p>
+<p><img src="images/Lab7Fig4.svg" alt="Voltage divider schematic" class="displayed" />&#160;</p>
+<p>The current through RA (the resistor between <em>V</em><sub>OFF</sub> and the summing node) must be much lower than the current through the voltage divider to prevent the op-amp circuit from changing the value of <em>V</em><sub>OFF</sub>. In other words, the effective resistance of the voltage divider (R1 <strong>in parallel</strong> with R2) should be much less than the value of RB. One reasonable design approach is to select a 330&#160;&#937; resistor for R2. The voltage across R2 is exactly the same as <em>V</em><sub>OFF</sub> so Ohm's Law tells us that we need a bit less than 1&#160;mA flowing through R2 in order to achieve <em>V</em><sub>OFF</sub>&#160;=&#160;320&#160;mV.</p>
+<p>To complete the design of the voltage divider you need to select an appropriate value for R1. You only have the standard 5% tolerance resistor values to choose from.</p>
+<ol type="1">
+<li><p>Determine the voltage values that you will use for VPS+ and VPS-. If you have an adjustable bipolar power supply or you are using standard 9&#160;V batteries then VPS+&#160;=&#160;+9&#160;V and VPS-&#160;=&#160;-9&#160;V. If you are using a fixed bipolar power supply, perhaps &#177;12&#160;V or &#177;15&#160;V, then those will be the values of VPS+ and VPS-.</p></li>
+<li><p><strong>Calculate</strong> the desired value of current through R2. Note that if we neglect the connection of <em>V</em><sub>OFF</sub> to RB then R1 and R2 are in series and the same current must flow through R1.</p></li>
+<li><p><strong>Calculate</strong> the voltage across R1 in your design, using the value of VPS+ that you found earlier.</p></li>
+<li><p><strong>Calculate</strong> the resistance value for R1 that will result in the desired current value flowing through R1 and R2.</p></li>
+<li><p>If your calculated value for R1 is not a standard resistor value then you must combine two or more standard resistors to obtain the desired value. <strong>Specify</strong> the standard resistor values that you can connect together to achieve an equivalent resistance that is within 5% of the desired value of R1.</p></li>
+</ol></li>
+</ol>
+<h2 id="circuit-construction">Circuit Construction</h2>
+<p>In this lab you will use the most common operational amplifier integrated circuit, the venerable 741. Our 741s are in an 8-pin DIP (dual in-line) package, with two rows of 4 pins on either side of the package. A small mark on the package indicates the location of pin 1 and the pins are numbered sequentially moving counterclockwise from pin 1 to pin 8. Pin 7 should be connected to the positive power supply voltage (<em>PS+</em>) and pin 4 is connected to the negative power supply voltage (<em>PS&#8722;</em>)&#8230;note that there is no ground pin. The inverting (<em>v</em><sub>&#8722;</sub>) and non-inverting (<em>v</em><sub>+</sub>) inputs are at pins 2 and 3 and the output (<em>v</em><sub><em>o</em></sub>) is provided at pin 6. Two pins, 1 and 5, are provided to &quot;null&quot; the input offset voltage of the operational amplifier but we won&#8217;t use those pins.</p>
+<p><img src="images/Lab7Fig2.svg" alt="741 op-amp pinout" class="displayed" />&#160;</p>
+<p>Note that the power supply connections for the op-amp are often not drawn explicitly in circuit schematics, but the amplifier will not function without them. The 741 op-amp will work well with <em>PS+</em> and <em>PS&#8722;</em> in the range of &#177;9&#160;V to &#177;15&#160;V.</p>
+<h3 id="procedure-1">Procedure</h3>
+<ol type="1">
+<li><p>Assemble the summing amplifier circuit on your breadboard, including the voltage divider that makes <em>V</em><sub>OFF</sub>. There is a small dot on the op-amp body that indicates the position of pin 1. Note that the op-amp neatly straddles the notch that runs down the middle of two rows of horizontal holes. Your finished circuit should include five resistors and the op-amp.</p></li>
+<li><p>If you are using an adjustable power supply for VPS+ and VPS- then you should set the output voltage to &#177;9&#160;V. If not, continue to the next step.</p></li>
+<li><p>Connect the VPS+ and VPS- power supplies to the <em>PS+</em> and <em>PS&#8722;</em> pins on the op-amp.<br />
+<img src="images/GenericWarning11.svg" alt="Warning" /> Double check your connections&#8230;<strong>reversing the <em>PS+</em> and <em>PS-</em> power supply connections will instantly destroy the op-amp.</strong></p></li>
+<li><p>Connect a variable power supply to the appropriate spot in your circuit where <em>V</em><sub>C</sub> should be connected.</p></li>
+<li><p>Be sure to connect the <em>GROUND</em> from each power supply to the ground node in your circuit.</p></li>
+</ol>
+<h2 id="circuit-testing">Circuit Testing</h2>
+<h3 id="procedure-2">Procedure</h3>
+<ol type="1">
+<li><p>Turn on the power supplies or connect the batteries to <em>VPS+</em> and <em>VPS-</em>.</p></li>
+<li><p>Use a multimeter to observe the value of <em>V</em><sub>OFF</sub>. Verify that <em>V</em><sub>OFF</sub> is within 5% of the desired value. If not, change the value of R1 as necessary. <strong>Record</strong> the final value of R1 that you used and the measured value of <em>V</em><sub>OFF</sub>. If you combined standard resistors to achieve the necessary value of R1, describe which standard values you selected and how you combined them (in series or in parallel).</p></li>
+<li><p>Verify that your circuit works. <strong>Compute</strong> the temperature in Celsius or Fahrenheit, as well as the corresponding voltage, to fill in the table below. Connect the DMM to measure the op-amp output voltage, <em>V</em><sub>F</sub>. <strong>Set</strong> <em>V</em><sub>C</sub> to the appropriate voltage corresponding to the Celsius temperature, then <strong>measure and record</strong> the resulting value of <em>V</em><sub>F</sub>, the amplifier output voltage. The difference between the desired value and the measured value should be less than 10%.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Temp (&#176;C)</th>
+<th style="text-align: left;"><em>V</em><sub>C</sub> (V)</th>
+<th style="text-align: left;">Temp (&#176;F)</th>
+<th style="text-align: left;">Desired <em>V</em><sub>F</sub> (V)</th>
+<th style="text-align: left;">Measured <em>V</em><sub>F</sub> (V)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">1.00</td>
+<td style="text-align: left;">212</td>
+<td style="text-align: left;">-2.12</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">38</td>
+<td style="text-align: left;">0.38</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">0.25</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0.00</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table></li>
+</ol>
+<p><img src="images/CC_BY_SA_40.png" alt="&quot;Creative Commons Attribution ShareAlike License&quot;" style="width: 10%" /> K. Joseph Hass, 2016</p>
+</body>
+</html>

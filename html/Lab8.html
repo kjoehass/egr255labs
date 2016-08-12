@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+      p {
+          line-height      : 130%;
+      }
+      code {
+          font-family      : "Courier New", Courier, monospace;
+          font-size        : 100%;
+      }
+      img {
+          vertical-align   : baseline;
+          margin           : 0;
+          padding          : 0;
+          border           : none;
+      }
+      img.displayed {
+          max-width        : 100%;
+          height           : auto;
+          display          : block;
+          margin-left      : auto;
+          margin-right     : auto;
+      }
+      img.margin {
+              float: left;
+      }
+      table {
+          margin-left      : auto;
+          margin-right     : auto;
+          margin-bottom    : 24px;
+          border-spacing   : 0;
+          border-bottom    : 2px solid black;
+          border-top       : 2px solid black;}
+      table th {
+          padding          : 3px 10px;
+          background-color : white;
+          border-top       : none;
+          border-left      : none;
+          border-right     : none;
+          border-bottom    : 1px solid black;
+      }
+      table td {
+          padding          : 3px 10px;
+          border-top       : none;
+          border-left      : none;
+          border-bottom    : none;
+          border-right     : none;
+      }
+  </style>
+</head>
+<body>
+<h1 id="transient-response-of-rc-and-rl-circuits">Transient Response of RC and RL Circuits</h1>
+<p>In this laboratory procedure you will investigate the transient response of first-order circuits that comprise a resistor and a capacitor or a resistor and an inductor.</p>
+<h2 id="rc-circuits">RC Circuits</h2>
+<h3 id="procedure">Procedure</h3>
+<ol type="1">
+<li><p>Construct the RC circuit shown below.</p>
+<p><img src="images/Lab8Fig1.svg" alt="Diagram of function generator connected to series resistor and capacitor" class="displayed" />&#160;</p></li>
+<li><p>Calculate and record the <em>RC</em> time constant, <span class="math inline">\(\tau\)</span>, of this circuit.</p></li>
+<li><p>Set the function generator to give a square wave output with a peak-to-peak magnitude of about 1.0&#160;V. Adjust the frequency of the function generator so that the period of the square wave is about 20 times the <em>RC</em> time constant of the circuit. Observe the output of the function generator with an oscilloscope and verify that the peak-to-peak voltage and period are as expected.</p>
+<p><img src="images/Lab8Fig4.svg" alt="Oscilloscope display of square wave" class="displayed" />&#160;</p>
+<p>When configured properly the oscilloscope display will resemble the image above. The small marker along the top edge of the display indicates the point <strong>in time</strong> where the oscilloscope triggers on the input waveform. The small &quot;ground&quot; symbol on the left edge indicates the vertical position on the screen that corresponds to 0&#160;V. There is actually just one such marker for each displayed waveform, and it will be aligned either with the lowest voltage of the signal or with the 50% point of the voltage, depending on the type of signal generator that you are using.</p></li>
+<li><p>Now observe the voltage across the capacitor. Sketch the capacitor voltage waveform for one complete cycle below, which should resemble the image below.<br />
+<img src="images/GenericWarning11.svg" alt="Warning" /> Whenever you draw a sketch of a signal waveform you must be sure to record the voltage (vertical) scale and time (horizontal) scale values. Mark the left edge of your sketch to show where the ground marker is located.</p>
+<p><img src="images/Lab8Fig5.svg" alt="Oscilloscope display of capacitor voltage" class="displayed" />&#160;</p></li>
+<li><p>While observing the capacitor voltage, use the oscilloscope to determine how long it takes the voltage to reach 0.632 times its final value after the rising edge of the input signal. <strong>Record</strong> this value. Is there reasonably good agreement between your calculated and observed values of <span class="math inline">\(\tau\)</span>?</p></li>
+<li><p>Swap the positions of the resistor and capacitor in your circuit, so that one end of the resistor is connected to ground.</p>
+<p><img src="images/Lab8Fig2.svg" alt="Diagram of function generator connected to series capacitor and resistor" class="displayed" />&#160;</p></li>
+<li><p>Sketch the resistor voltage waveform for one complete cycle.</p></li>
+<li><p>Rebuild the original circuit but change the resistor value to 5.6&#160;k&#937;. Recalculate and <strong>record</strong> the time constant based on the new resistor value.</p></li>
+<li><p>Repeat your time constant observation and the sketches for the capacitor voltage and the resistor voltage. The frequency of the waveform generator may have to be changed to achieve the flat sections at top and bottom of the waveforms.</p></li>
+</ol>
+<h2 id="rl-circuits">RL Circuits</h2>
+<h3 id="procedure-1">Procedure</h3>
+<ol type="1">
+<li><p>Construct the RL circuit shown below.</p>
+<p><img src="images/Lab8Fig3.svg" alt="Diagram of function generator connected to series resistor and inductor" class="displayed" />&#160;</p></li>
+<li><p><strong>Calculate</strong> and <strong>record</strong> the time constant of this circuit.</p></li>
+<li><p>Adjust the frequency of the function generator so that the period of the square wave is about 20 times the <em>RL</em> time constant of the circuit. When viewing the waveform you should see definite flat sections at the top and bottom.</p></li>
+<li><p>While observing the inductor voltage, use the oscilloscope cursors to determine when the voltage reaches 0.632 times its final value after the rising edge of the input signal. <strong>Record</strong> this value. Is there reasonably good agreement between your calculated and measured values?</p></li>
+<li><p>Sketch the inductor voltage waveform for one complete cycle below, recording the voltage scale and time scale values.</p></li>
+<li><p>Swap the positions of the resistor and inductor in your circuit, so that one end of the resistor is connected to ground. Sketch the resistor voltage waveform for one complete cycle below.</p></li>
+</ol>
+<!--
+14. Rebuild the original circuit but change the resistor value to 5.6&#160;k&#937;.
+    Recalculate and **record** the time constant. Repeat your observations and
+    sketches for the inductor voltage and the resistor voltage. The frequency
+    of the waveform generator may have to be changed to achieve the flat
+    sections at top and bottom of the waveforms.
+
+    ![GenericScopeGraticule](images/GenericScopeGraticule){.displayed}&#160;
+
+    ![GenericScopeGraticule](images/GenericScopeGraticule){.displayed}&#160;
+-->
+<p><img src="images/CC_BY_SA_40.png" alt="&quot;Creative Commons Attribution ShareAlike License&quot;" style="width: 10%" /> K. Joseph Hass, 2016</p>
+</body>
+</html>

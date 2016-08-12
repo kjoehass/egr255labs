@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+      p {
+          line-height      : 130%;
+      }
+      code {
+          font-family      : "Courier New", Courier, monospace;
+          font-size        : 100%;
+      }
+      img {
+          vertical-align   : baseline;
+          margin           : 0;
+          padding          : 0;
+          border           : none;
+      }
+      img.displayed {
+          max-width        : 100%;
+          height           : auto;
+          display          : block;
+          margin-left      : auto;
+          margin-right     : auto;
+      }
+      img.margin {
+              float: left;
+      }
+      table {
+          margin-left      : auto;
+          margin-right     : auto;
+          margin-bottom    : 24px;
+          border-spacing   : 0;
+          border-bottom    : 2px solid black;
+          border-top       : 2px solid black;}
+      table th {
+          padding          : 3px 10px;
+          background-color : white;
+          border-top       : none;
+          border-left      : none;
+          border-right     : none;
+          border-bottom    : 1px solid black;
+      }
+      table td {
+          padding          : 3px 10px;
+          border-top       : none;
+          border-left      : none;
+          border-bottom    : none;
+          border-right     : none;
+      }
+  </style>
+</head>
+<body>
+<h1 id="transformers">Transformers</h1>
+<p>In this laboratory procedure you will investigate the characteristics of a typical power transformer. You will observe how the <strong>turns ratio</strong> affects the secondary voltage and current. You will use a voltmeter to find the &quot;dotted&quot; connections to the primary and secondary windings.</p>
+<p>The turns ratio, <em>n</em>, is the ratio of the number of wire turns in the secondary, <em>N</em><sub>SEC</sub>, to the number of turns in the primary, <em>N</em><sub>PRI</sub>. The turns ratio also determines the ratio between the voltages and currents in the primary and secondary windings. In the formula below it doesn't matter whether the voltages and currents are peak-to-peak values or RMS values as long as the measurements at the primary and the secondary are consistent.</p>
+<p><span class="math display">\[ \frac{V_{SEC}}{V_{PRI}} = \frac{I_{PRI}}{I_{SEC}} = \frac{N_{SEC}}{N_{PRI}} = n \]</span></p>
+<h2 id="finding-the-ratio-of-turns">Finding the ratio of turns</h2>
+<h3 id="procedure">Procedure</h3>
+<ol type="1">
+<li><p>Determine the rated input and output voltages for the transformer by inspecting the labels or markings on the transformer. <strong>Calculate</strong> and <strong>record</strong> the turns ratio, <em>n</em>, for the transformer based on the rated voltages.</p></li>
+<li><p>Connect a function generator to the primary winding of a transformer as shown below. The primary winding will typically have two black leads coming from the transformer. You should arbitrarily choose one of the primary leads to be the dotted end of the primary and connect that lead to the red alligator clip from the function generator. Connect the other primary lead to the function generator&#8217;s black alligator clip.</p>
+<p>Mark the dotted primary lead wire using masking tape or an adhesive label.</p>
+<p><img src="images/Lab12Fig1.svg" alt="Schematic of function generator driving transformer primary" class="displayed" />&#160;</p></li>
+<li><p>Connect a voltmeter across the primary winding. Set the function generator for a sine wave output of 60&#160;Hz. Adjust the amplitude of the function generator so that the primary voltage is 5&#160;V<sub>RMS</sub>, as indicated by a voltmeter. Note that most voltmeters indicate the RMS voltage rather than the peak or peak-to-peak voltage.<br />
+<img src="images/GenericCheck.svg" alt="Check" /> If the meter reads a very small voltage you may have configured it to read d.c. voltage instead of a.c. voltage. Remember that the standard symbol for d.c. is <img src="images/GenericDCIcon.svg" alt="DC icon" /> while the standard symbol for a.c. is <img src="images/GenericACIcon.svg" alt="AC icon" />.</p></li>
+<li><p><strong>Measure</strong> and <strong>record</strong> the RMS voltage that appears across the full secondary winding of the transformer. The secondary will have two wires of the same color (typically both red or both green) that are the terminals of the full secondary. A third wire (usually yellow) is the <em>center tap</em> for the secondary winding.</p></li>
+<li><p><strong>Calculate</strong> and <strong>record</strong> the turns ratio, <em>n</em>, for the transformer using the measured RMS voltage values for the primary and secondary.</p></li>
+<li><p><strong>Discuss</strong> how the calculated value for <em>n</em> using the rated voltages compares to the value calculated from the measured voltages. You should expect these values to be within about 10% of each other.</p></li>
+</ol>
+<h2 id="finding-the-dotted-connections">Finding the dotted connections</h2>
+<h3 id="procedure-1">Procedure</h3>
+<ol type="1">
+<li><p>Connect either one of the secondary leads to the dotted primary lead.<br />
+<img src="images/GenericWarning11.svg" alt="Warning" /> <strong>Do not</strong> connect <strong>both</strong> secondary leads to the primary leads.</p></li>
+<li><p><strong>Measure</strong> and <strong>record</strong> the voltage from the <em>undotted</em> primary lead to the <em>unconnected</em> secondary lead.<br />
+<img src="images/GenericWarning11.svg" alt="Warning" /> Make certain that your multimeter is configured to measure a.c. voltage, <strong>not current</strong>, before connecting it to the transformer.</p>
+<p><img src="images/Lab12Fig2.svg" alt="Schematic of transformer connected to identify dotted leads" class="displayed" />&#160;</p></li>
+<li><p>Compare the voltage measurement you just made to the separate measurements of the primary and secondary voltages you measured earlier.</p>
+<ul>
+<li><p>If the voltage you measured in the previous step is equal to the <strong>sum</strong> of the separate primary and secondary voltages then the dotted secondary connection is the secondary lead that is connected to the voltmeter.</p></li>
+<li><p>If the voltage you measured in the previous step is equal to the <strong>difference</strong> between the separate primary and secondary voltages then the dotted secondary connection is the secondary lead that is connected to the dotted primary lead.</p></li>
+</ul>
+<p><strong>Mark</strong> the dotted secondary lead as you did the dotted primary lead.</p></li>
+<li><p>Disconnect the secondary winding from the primary and disconnect the voltmeter.</p></li>
+<li><p>Connect an oscilloscope probe across the primary winding, being careful to connect the black alligator clip to the <em>undotted</em> primary lead, which should also be connected to the black alligator clip from the function generator. Connect the probe tip to the dotted primary lead.</p></li>
+<li><p>Connect a second oscilloscope probe across the secondary winding. The probe tip should be connected to the <em>dotted</em> lead and the black alligator clip can be connected to the undotted secondary lead.</p></li>
+<li><p>Use the oscilloscope to verify that the primary and secondary voltages have the same phase.</p></li>
+<li><p><strong>Measure</strong> and <strong>record</strong> the peak-to-peak voltages of both the primary and secondary. <strong>Calculate</strong> the turns ratio once again from these values and verify that it is essentially the same as the value you calculated from the RMS voltmeter measurements.</p></li>
+</ol>
+<h2 id="behavior-with-loaded-secondary">Behavior with loaded secondary</h2>
+<h3 id="procedure-2">Procedure</h3>
+<ol type="1">
+<li><p><strong>Measure</strong> and <strong>record</strong> the resistance of the load resistor provided to you, to the nearest ohm.</p></li>
+<li><p>Leave the oscilloscope connected to the primary and secondary windings. Configure the oscilloscope to provide measurements of the RMS voltages on the primary and secondary. <img src="images/GenericWarning11.svg" alt="Warning" /> If your oscilloscope cannot report RMS voltages directly you will need to measure the peak-to-peak voltages and calculate the corresponding RMS values.</p></li>
+<li><p>Configure the multimeter to measure a.c.&#160;current of a few milliamperes.</p></li>
+<li><p>Disconnect the red alligator clip from the function generator and insert the DMM between the function generator and the transformer. <strong>Measure</strong> and <strong>record</strong> the primary current with nothing but the oscilloscope connected to the secondary.</p></li>
+<li><p>Connect the load resistor across the secondary winding.</p>
+<p><img src="images/Lab12Fig3.svg" alt="Schematic of transformer with resistor load on secondary and ammeter in primary winding" class="displayed" />&#160;</p></li>
+<li><p><strong>Record</strong> the RMS voltage across the secondary winding. Using the measured resistance value, <strong>calculate</strong> and <strong>record</strong> the secondary current.<br />
+<img src="images/GenericWarning11.svg" alt="Warning" /> Be careful to reconfigure the meter for voltage measurement rather than current measurement.</p></li>
+<li><p>With the resistor still connected across the secondary winding, <strong>record</strong> the RMS voltage across the primary winding as well as the primary current.</p></li>
+<li><p><strong>Calculate</strong> and <strong>record</strong> the <em>increase</em> in the primary current caused by adding a load to the secondary.</p></li>
+<li><p><strong>Calculate</strong> and <strong>record</strong> the turns ratio using the secondary current divided by the increase in primary current.</p></li>
+</ol>
+<p><img src="images/CC_BY_SA_40.png" alt="&quot;Creative Commons Attribution ShareAlike License&quot;" style="width: 10%" /> K. Joseph Hass, 2016</p>
+</body>
+</html>

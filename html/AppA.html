@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+      p {
+          line-height      : 130%;
+      }
+      code {
+          font-family      : "Courier New", Courier, monospace;
+          font-size        : 100%;
+      }
+      img {
+          vertical-align   : baseline;
+          margin           : 0;
+          padding          : 0;
+          border           : none;
+      }
+      img.displayed {
+          max-width        : 100%;
+          height           : auto;
+          display          : block;
+          margin-left      : auto;
+          margin-right     : auto;
+      }
+      img.margin {
+              float: left;
+      }
+      table {
+          margin-left      : auto;
+          margin-right     : auto;
+          margin-bottom    : 24px;
+          border-spacing   : 0;
+          border-bottom    : 2px solid black;
+          border-top       : 2px solid black;}
+      table th {
+          padding          : 3px 10px;
+          background-color : white;
+          border-top       : none;
+          border-left      : none;
+          border-right     : none;
+          border-bottom    : 1px solid black;
+      }
+      table td {
+          padding          : 3px 10px;
+          border-top       : none;
+          border-left      : none;
+          border-bottom    : none;
+          border-right     : none;
+      }
+  </style>
+</head>
+<body>
+<h1 id="standard-engineering-units">Standard Engineering Units</h1>
+<p>Successful engineering practice depends on our ability to communicate precisely and unambiguously with each other, whether across the hall or across the globe. When it comes to quantifying the physical world we rely on the <strong>International System of Units</strong>, more commonly known as the SI system.</p>
+<p>The SI system defines the <strong>units</strong> that are used to measure and specify <strong>quantities</strong> (or <strong>properties</strong>) in the physical world. For example, one of the properties of a steel bar might be its length. You might also say that the bar has some <strong>quantity</strong> or <strong>amount</strong> of length. The SI system specifies that the appropriate unit for length is the <strong>meter</strong> and that the correct symbol for the meter is the lowercase letter <strong>m</strong>.</p>
+<h2 id="si-units">SI units</h2>
+<p>The SI system is composed of seven <strong>base units</strong> and many more <strong>derived units</strong>. The seven base units and their unit symbols are shown in the table below.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Quantity&#8195;</th>
+<th style="text-align: left;">Unit Name&#8195;</th>
+<th style="text-align: left;">Unit Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">length</td>
+<td style="text-align: left;">meter</td>
+<td style="text-align: left;">m</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mass</td>
+<td style="text-align: left;">kilogram</td>
+<td style="text-align: left;">kg</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">time</td>
+<td style="text-align: left;">second</td>
+<td style="text-align: left;">s</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">electric current</td>
+<td style="text-align: left;">ampere</td>
+<td style="text-align: left;">A</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">thermodynamic temperature</td>
+<td style="text-align: left;">kelvin</td>
+<td style="text-align: left;">K</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">amount of substance</td>
+<td style="text-align: left;">mole</td>
+<td style="text-align: left;">mol</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">luminous intensity</td>
+<td style="text-align: left;">candela</td>
+<td style="text-align: left;">cd</td>
+</tr>
+</tbody>
+</table>
+<p>There are many SI derived units that are used in electrical engineering, and the more common examples are given in the table below. All derived units can be expressed in terms of the base units, although sometimes it is more convenient to define a group of derived units in terms of each other.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Quantity&#8195;</th>
+<th style="text-align: left;">Unit Name&#8195;</th>
+<th style="text-align: left;">Unit Symbol</th>
+<th style="text-align: left;">Simple Expression</th>
+<th style="text-align: left;">Base Unit Expression</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">plane angle</td>
+<td style="text-align: left;">radian</td>
+<td style="text-align: left;">rad</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">frequency</td>
+<td style="text-align: left;">hertz</td>
+<td style="text-align: left;">Hz</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">s<sup>-1</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">force</td>
+<td style="text-align: left;">newton</td>
+<td style="text-align: left;">N</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">m&#183;kg&#183;s<sup>-2</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">energy</td>
+<td style="text-align: left;">joule</td>
+<td style="text-align: left;">J</td>
+<td style="text-align: left;">N&#183;m</td>
+<td style="text-align: left;">m<sup>2</sup>&#183;kg&#183;s<sup>&#8722;2</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">power</td>
+<td style="text-align: left;">watt</td>
+<td style="text-align: left;">W</td>
+<td style="text-align: left;">J/s</td>
+<td style="text-align: left;">m<sup>2</sup>&#183;kg&#183;s<sup>&#8722;3</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">charge</td>
+<td style="text-align: left;">coulomb</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">s&#183;A</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">electric potential</td>
+<td style="text-align: left;">volt</td>
+<td style="text-align: left;">V</td>
+<td style="text-align: left;">W/A</td>
+<td style="text-align: left;">m<sup>2</sup>&#903;kg&#903;s<sup>&#8722;3</sup>&#903;A<sup>&#8211;1</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">capacitance</td>
+<td style="text-align: left;">farad</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">C/V</td>
+<td style="text-align: left;">m<sup>&#8722;2</sup>&#903;kg<sup>&#8722;1</sup>&#903;s<sup>4</sup>&#903;A<sup>2</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">electric resistance</td>
+<td style="text-align: left;">ohm</td>
+<td style="text-align: left;">&#937;</td>
+<td style="text-align: left;">V/A</td>
+<td style="text-align: left;">m<sup>2</sup>&#903;kg&#903;s<sup>&#8722;3</sup>&#903;A<sup>&#8722;2</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">magnetic flux</td>
+<td style="text-align: left;">weber</td>
+<td style="text-align: left;">Wb</td>
+<td style="text-align: left;">V&#903;s</td>
+<td style="text-align: left;">m<sup>2</sup>&#903;kg&#903;s<sup>&#8722;2</sup>&#903;A<sup>&#8722;1</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">magnetic flux density</td>
+<td style="text-align: left;">tesla</td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">Wb/m<sup>2</sup></td>
+<td style="text-align: left;">kg&#903;s<sup>&#8722;2</sup>&#903;A<sup>&#8722;1</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">inductance</td>
+<td style="text-align: left;">henry</td>
+<td style="text-align: left;">H</td>
+<td style="text-align: left;">Wb/A</td>
+<td style="text-align: left;">m<sup>2</sup>&#903;kg&#903;s<sup>&#8722;2</sup>&#903;A<sup>&#8722;2</sup></td>
+</tr>
+</tbody>
+</table>
+<p>There are a few units that don't follow the normal conventions for describing SI units but are so common that they are approved for use with the SI units.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Quantity</th>
+<th style="text-align: left;">Unit Name&#8195;</th>
+<th style="text-align: left;">Unit Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">time</td>
+<td style="text-align: left;">minute</td>
+<td style="text-align: left;">min</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">time</td>
+<td style="text-align: left;">hour</td>
+<td style="text-align: left;">h</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">time</td>
+<td style="text-align: left;">day</td>
+<td style="text-align: left;">d</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">angle</td>
+<td style="text-align: left;">degree</td>
+<td style="text-align: left;">&#176;</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ratio</td>
+<td style="text-align: left;">bel</td>
+<td style="text-align: left;">B</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ratio</td>
+<td style="text-align: left;">decibel</td>
+<td style="text-align: left;">dB</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">volume</td>
+<td style="text-align: left;">liter</td>
+<td style="text-align: left;">L (in U.S.A.)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="si-prefixes">SI prefixes</h2>
+<p>The SI <strong>prefixes</strong> are used to specify multiples or submultiples of the SI units. Using a prefix with an SI unit makes it easier to describe very large or very small quantities. Each prefix indicates a multiplier that is an integer power of 10. For example, commonly used units for length are the <strong>centimeter</strong>, which is equal to one one-hundredth of a meter (0.01&#8239;m), and the <strong>kilometer</strong>, which is equal to one thousand meters (1000&#8239;m).</p>
+<p>In engineering we prefer to use only those prefixes that represent the value of 10 raised to a power that is a multiple of 3, such as those shown in the table below. These prefixes are known as the <strong>engineering prefixes</strong> and quantities expressed with SI units and engineering prefixes are said to be in <strong>engineering units</strong>.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Prefix&#8195;</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: left;">Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">giga</td>
+<td style="text-align: left;">1&#8239;000&#8239;000&#8239;000=10<sup>9</sup></td>
+<td style="text-align: left;">G</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mega</td>
+<td style="text-align: left;">1&#8239;000&#8239;000=10<sup>6</sup></td>
+<td style="text-align: left;">M</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">kilo</td>
+<td style="text-align: left;">1&#8239;000=10<sup>3</sup></td>
+<td style="text-align: left;">k</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">milli</td>
+<td style="text-align: left;">0.001=10<sup>-3</sup></td>
+<td style="text-align: left;">m</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">micro</td>
+<td style="text-align: left;">0.000&#8239;001=10<sup>-6</sup></td>
+<td style="text-align: left;">&#956;</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">nano</td>
+<td style="text-align: left;">0.000&#8239;000&#8239;001=10<sup>-9</sup></td>
+<td style="text-align: left;">n</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pico</td>
+<td style="text-align: left;">0.000&#8239;000&#8239;000&#8239;001=10<sup>-12</sup></td>
+<td style="text-align: left;">p</td>
+</tr>
+</tbody>
+</table>
+<p>Although it has been common practice in computer-related fields, the use of the prefix <em>kilo</em> to mean 1024 (2<sup>10</sup>), <em>mega</em> to mean 2<sup>20</sup>, or <em>giga</em> to mean 2<sup>30</sup> is prohibited by international standards. Corresponding &quot;binary prefixes&quot; have been defined, including <em>kibi</em>, <em>mebi</em>, and <em>gibi</em>, and these should be used to specify the capacity of computer storage.</p>
+<h2 id="using-si-units-and-prefixes">Using SI units and prefixes</h2>
+<p>One of the most critical aspects of engineering communication is <strong>clarity</strong>. Whenever we talk or write about our work we should ensure that there is no misunderstanding between the people in the conversation. Unfortunately, engineers are still human and the history of engineering is littered with case histories of projects that went horribly awry when communications were not clear and complete. Sadly, many of these examples resulted in severe injuries or loss of life.</p>
+<p>The foundation of clear communication is agreeing on the meaning of our words and the syntax for combining them. In normal conversation we might consult a dictionary, but for engineering communication we rely on the standards published by our government agencies and professional societies.</p>
+<ul>
+<li><p>Always use a prefix <strong>symbol</strong> with a unit <strong>symbol</strong>, or a prefix <strong>name</strong> with a unit <strong>name</strong>. Never combine a symbol and a name. Writing megaampere or MA is correct, but megaA or Mampere is wrong.</p></li>
+<li><p>When expressing a numerical value for a quantity, use the <strong>symbols</strong> for the prefix and unit rather than their full names.</p></li>
+<li><p>The names of the SI units (volt, ampere, farad, etc.) are generally <strong>not</strong> capitalized. They should only be capitalized in situations where any other word would be capitalized, such as when used as the first word in a sentence. An important exception is that &#176;C is written out as &quot;degree Celsius&quot; with a capital letter C.</p></li>
+<li><p>When the name of an SI unit is derived from a person's name then the <strong>symbol</strong> for that unit is always capitalized.</p></li>
+<li><p>Be careful to use the proper case for a symbol. The uppercase letter K is the symbol for the unit of temperature but the lowercase k is a symbol for the prefix &quot;kilo&quot;. The lowercase letter m stands for the prefix &quot;milli&quot; but the uppercase M stands for the prefix &quot;mega&quot;.</p></li>
+<li><p>The numerical value of a quantity and its unit symbol are always separated with a space. Use a non-breaking space to prevent a line break from occurring between the numerical value and the unit symbol. However, spaces are <strong>not</strong> used before the degree, minute, and second symbols when used for plane angles. A space <strong>is</strong> used before the degree symbol (but not before the letter C) when expressing a quantity in degrees Celsius.</p></li>
+<li><p>If four or more digits appear on either side of the decimal point in a numerical value then the digits should be separated into groups of three using a thin, non-breaking space. <strong>Do not</strong> use commas to separate groups of digits.</p></li>
+<li><p>Symbols that represent <strong>quantities</strong> (e.g. <em>L</em> for an inductance) should be written in italic. Symbols that represent <strong>units</strong> should be written upright (e.g. H for henries). These rules apply to normal text as well as equations.</p></li>
+<li><p>As a general rule, the numerical value used with a unit symbol should be between 0.1 and 1000. An appropriate prefix should be used with the unit symbol so the numerical value will be in the desired range. There are situations where this rule is intentionally violated for the sake of clarity, such as using the same unit for all dimensions in an engineering drawing.</p></li>
+<li><p>Exponential notation should not be used in the numerical value of a quantity. A resistance of 2.7&#10761;10<sup>3</sup>&#8239;&#937; should be written instead as 2.7&#8239;k&#937;.</p></li>
+</ul>
+<h2 id="references">References</h2>
+<p><strong>Guide for the Use of the International System of Units (SI), NIST Special Publication 811</strong>, March 2008, National Institute of Standards and Technology, Gaithersburg, MD 20899</p>
+<p><strong>IEEE Recommended Practice for Preferred Metric Units for Use in Electrical and Electronics Science and Technology, ANSI/IEEE Std 945-1984</strong>, Reaffirmed 2008, IEEE Standards Board and American National Standards Institute</p>
+<p><strong>American National Standard for Metric Practice, IEEE/ASTM SI&#8201;10-2010</strong>, Approved 8&#8201;December 2010 by IEEE-SA Standards Board, Approved 1&#8201;March 2011 by ASTM International and American National Standards Institute</p>
+<p><img src="images/CC_BY_SA_40.png" alt="&quot;Creative Commons Attribution ShareAlike License&quot;" style="width: 10%" /> K. Joseph Hass, 2016</p>
+</body>
+</html>

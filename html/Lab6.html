@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+      p {
+          line-height      : 130%;
+      }
+      code {
+          font-family      : "Courier New", Courier, monospace;
+          font-size        : 100%;
+      }
+      img {
+          vertical-align   : baseline;
+          margin           : 0;
+          padding          : 0;
+          border           : none;
+      }
+      img.displayed {
+          max-width        : 100%;
+          height           : auto;
+          display          : block;
+          margin-left      : auto;
+          margin-right     : auto;
+      }
+      img.margin {
+              float: left;
+      }
+      table {
+          margin-left      : auto;
+          margin-right     : auto;
+          margin-bottom    : 24px;
+          border-spacing   : 0;
+          border-bottom    : 2px solid black;
+          border-top       : 2px solid black;}
+      table th {
+          padding          : 3px 10px;
+          background-color : white;
+          border-top       : none;
+          border-left      : none;
+          border-right     : none;
+          border-bottom    : 1px solid black;
+      }
+      table td {
+          padding          : 3px 10px;
+          border-top       : none;
+          border-left      : none;
+          border-bottom    : none;
+          border-right     : none;
+      }
+  </style>
+</head>
+<body>
+<h1 id="operational-amplifier-circuits">Operational Amplifier Circuits</h1>
+<p>An operational amplifier is a wonderfully versatile building block for electronic circuits. As long as you follow a few simple guidelines it will be easy to design and analyze a variety of useful amplifier circuits that have an operational amplifier at their core.</p>
+<p>The internal circuitry of an operational amplifier is fairly complex, comprising dozens of transistors, resistors, and other simple circuit elements. A well-designed operational amplifier may behave <strong>almost</strong> like an ideal operational amplifier; so much so that we sometimes forget about the practical considerations involved in assembling operational amplifier circuits.</p>
+<h2 id="using-operational-amplifiers">Using Operational Amplifiers</h2>
+<p>In this lab you will use the most common operational amplifier integrated circuit, the venerable 741. Our 741s are in an 8-pin DIP (dual in-line) package, with two rows of 4 pins on either side of the package. A small mark on the package indicates the location of pin 1. This mark is usually a small circle stamped into the plastic package near pin 1 or a semicircular notch at one end of the package. Once you have identified pin 1 the remaining pins are numbered sequentially moving counterclockwise from pin 1 to pin 8.</p>
+<p><img src="images/GenericWarning11.svg" alt="Warning" /> <strong>An operational amplifier may be destroyed instantly if you connect its power supply pins incorrectly. Follow these instructions carefully.</strong> Traditionally, operational amplifier circuits use a <strong>bipolar</strong> power supply, which means that there are two power supply connections to the amplifier: one that is <strong>positive</strong> with respect to the circuit ground and one that is <strong>negative</strong> with respect to ground.</p>
+<p><img src="images/Lab6Fig1.svg" alt="Operational amplifier power connection diagram" class="displayed" width="500" />&#160;</p>
+<p>You may have a bench power supply that is designed for this purpose and provides three terminals for the positive power supply voltage, the negative supply voltage, and circuit ground. You can also use two 9-volt batteries to form a bipolar power supply. The first battery should have its positive output terminal connected to the positive supply terminal of the operational amplifier and the battery's negative terminal is connected to the circuit ground. The second battery should have its positive output terminal connected to the circuit ground and the battery's negative terminal is connected to the negative supply terminal of the operational amplifier.</p>
+<p><img src="images/GenericWarning11.svg" alt="Warning" /> If you use an adjustable bench power supply to provide power to the operational amplifier, adjust its output voltage to the proper range <strong>before</strong> you connect the supply to the circuit.</p>
+<p><img src="images/GenericWarning11.svg" alt="Warning" /> The &quot;ground&quot; node in an amplifier circuit might not be connected to the operational amplifier itself. However, the circuit ground node is the reference point that is used to measure the amplifier's input and output voltages and you <strong>must</strong> connect the circuit ground to the bipolar power supply as described.</p>
+<p>For the 741 operational amplifier in an 8-pin DIP, pin 7 must be connected to the positive power supply voltage (PS+) and pin 4 is connected to the negative power supply voltage (PS-); note that there is no ground pin.</p>
+<p>The inverting and non-inverting inputs are at pins 2 and 3 and the output is provided at pin 6. It is a common practice when describing operational amplifier circuits to focus on the important connections to these three terminals. The power supply connections are <strong>implied</strong> and must be made correctly for the amplifier circuit to perform its desired function, even if these connections are not explicitly shown on a schematic.</p>
+<h2 id="inverting-amplifier">Inverting Amplifier</h2>
+<p>The most common amplifier circuit that can be constructed from an operational amplifier is an <strong>inverting amplifier</strong>. This circuit is inverting in the sense that the output voltage will be negative when the input voltage is positive, and the output voltage will be positive when the input voltage is negative.</p>
+<h3 id="procedure">Procedure</h3>
+<ol type="1">
+<li><p>Select two resistors to use in this procedure. The first resistor should have a value between 10&#160;k&#937; and 20&#160;k&#937;, and we'll name this value <em>R</em><sub>i</sub>.</p>
+<p>The second resistor should have a value between 40&#160;k&#937; and 50&#160;k&#937; and will be named <em>R</em><sub>f</sub>.</p></li>
+<li><p>Record the colors of the bands on each resistor, including the band (if any) that indicates the resistor's tolerance. Use the resistor color code to determine the marked resistance value for each resistor and record these values.</p></li>
+<li><p>Use your multimeter to measure the actual value of the resistors. Record these values with (at least) three significant digits.</p></li>
+<li><p><img src="images/GenericCheck.svg" alt="Verify" /> Verify that the measured value agrees with the marked value of each resistor, within the tolerance value indicated by the color bands. If not, repeat the previous two steps.</p></li>
+<li><p>Construct the <strong>inverting amplifier</strong> circuit shown below.</p>
+<p>Don't forget to connect the bipolar power supply to pins 7 (PS+) and 4 (PS-) on the operational amplifier. <img src="images/GenericWarning11.svg" alt="Warning" /> If you are using an adjustable bench power supply adjust the output voltages to be approximately &#177;9&#160;V <strong>before</strong> connecting the power supply to the circuit.</p>
+<p>Use an adjustable power supply to provide <em>V</em><sub>in</sub>. <img src="images/GenericWarning11.svg" alt="Warning" /> Adjust the supply's output voltage to approximately 1&#160;V <strong>before</strong> connecting it to the circuit.</p>
+<p><img src="images/Lab6Fig2.svg" alt="Inverting operational amplifier circuit diagram" class="displayed" />&#160;</p></li>
+<li><p>Use the measured values of <em>R</em><sub>i</sub> and <em>R</em><sub>f</sub> to calculate the expected gain, <em>A</em><sub>E</sub>, of the inverting amplifier circuit. Be careful to use the correct sign and the appropriate number of significant digits in your answer.</p></li>
+<li><p><img src="images/GenericCheck.svg" alt="Verify" /> With the circuit power supplies turned on, verify that the voltages at pins 2, 3, 4, and 7 of the operational amplifier are reasonable. <strong>Do not</strong> proceed until you feel comfortable that you understand what the reasonable values for these voltages are and you can verify each of the voltages by measuring them. <strong>Record</strong> the measured voltage at each pin.</p></li>
+<li><p>Adjust <em>V</em><sub>in</sub> to 0.25&#160;V &#177;&#160;0.01&#160;V. Measure and record the actual voltages <em>V</em><sub>in</sub> and <em>V</em><sub>out</sub> with at least three significant digits. Calculate and record the observed circuit gain, <em>A</em><sub>O</sub>, using the measured voltages.</p>
+<p><em>A</em><sub>O</sub> = <em>V</em><sub>out</sub> / <em>V</em><sub>in</sub></p>
+<p>Be careful to use the <strong>correct sign</strong> and the appropriate number of significant digits in your answer.</p></li>
+<li><p>Calculate the gain error as</p>
+<p>&#916;<em>A</em> = ( (|<em>A</em><sub>E</sub> - <em>A</em><sub>O</sub>|)/<em>A</em><sub>E</sub> ) &#10761; 100%</p>
+<p>where &#916;<em>A</em> is the gain error as a percentage of the expected gain, <em>A</em><sub>E</sub> is the expected gain, and <em>A</em><sub>O</sub> is the measured gain.</p>
+<p><img src="images/GenericCheck.svg" alt="Verify" /> If the gain error is greater than 2% you should double-check the construction of the amplifier circuit, your resistance measurements, and your voltage measurements.</p></li>
+<li><p>Adjust <em>V</em><sub>in</sub> to 0.50&#160;V &#177;&#160;0.02&#160;V. Measure <em>V</em><sub>in</sub> and <em>V</em><sub>out</sub>. Calculate <em>A</em><sub>O</sub> and &#916;<em>A</em> for these values of <em>V</em><sub>in</sub> and <em>V</em><sub>out</sub>.</p></li>
+<li><p>Adjust <em>V</em><sub>in</sub> to 1.00&#160;V &#177;&#160;0.05&#160;V. Measure <em>V</em><sub>in</sub> and <em>V</em><sub>out</sub>. Calculate <em>A</em><sub>O</sub> and &#916;<em>A</em> for these values of <em>V</em><sub>in</sub> and <em>V</em><sub>out</sub>.</p></li>
+<li><p>With <em>V</em><sub>in</sub> set to about 1.0&#160;V measure and record <em>V</em><sub>inv</sub>, the voltage at the inverting input of the operational amplifier. Repeat this measurement with <em>V</em><sub>in</sub> set to about 0.50&#160;V and about 0.25&#160;V.</p>
+<p>Does the measured value of <em>V</em><sub>inv</sub> change significantly as you adjust the value of <em>V</em><sub>in</sub>? What can you say about the relationship between the voltages at the inverting and non-inverting inputs to the operational amplifier in this circuit?</p></li>
+<li><p>Add a load resistor, <em>R</em><sub>load</sub>, at the operational amplifier output as shown below. The resistance of <em>R</em><sub>load</sub> should be between 2&#160;k&#937; and 3&#160;k&#937;. Measure and record the actual resistance value.</p>
+<p><img src="images/Lab6Fig3.svg" alt="Inverting operational amplifier circuit with load diagram" class="displayed" />&#160;</p></li>
+<li><p>Measure and record the voltages <em>V</em><sub>in</sub> and <em>V</em><sub>out</sub> with respect to ground. Calculate <em>A</em><sub>O</sub> and &#916;<em>A</em> for these values of <em>V</em><sub>in</sub> and <em>V</em><sub>out</sub>.</p>
+<p>Did the observed gain change significantly when you added the load resistor?</p></li>
+<li><p>Using Ohm's Law and your measured resistance and voltage values, calculate the currents <em>I</em><sub>in</sub> and <em>I</em><sub>f</sub> as shown in the diagram. Be careful to note the directions of the currents and observe the signs of the voltages.</p>
+<p>Apply Kirchhoff's Current Law at the circuit node that connects one end of <em>R</em><sub>i</sub>, one end of <em>R</em><sub>f</sub>, and the inverting input of the operational amplifier. How much current (<em>I</em><sub>inv</sub>) is flowing into the inverting input? Is it large or small compared to <em>I</em><sub>in</sub> and <em>I</em><sub>f</sub>?</p></li>
+<li><p>Using Ohm's law and your measured resistance and voltage values, calculate the current <em>I</em><sub>load</sub>. Be careful to note the directions of the current and observe the signs of the voltages.</p>
+<p>Apply Kirchhoff's Current Law at the circuit node that connects one end of <em>R</em><sub>f</sub>, one end of <em>R</em><sub>load</sub>, and the output pin of the operational amplifier. How much current (<em>I</em><sub>out</sub>) must be flowing out of the inverting output?</p></li>
+<li><p>You should find that the magnitude of <em>I</em><sub>out</sub> is much larger than the magnitude of <em>I</em><sub>inv</sub>. If so, what is the source of the current that eventually appears at the output pin of the operational amplifier?</p></li>
+</ol>
+<h2 id="non-inverting-amplifier">Non-inverting Amplifier</h2>
+<p>We can also construct a <strong>non-inverting amplifier</strong> circuit using an operational amplifier, where the input and output voltages will both be positive or both negative. One disadvantage of the non-inverting amplifier circuit is that there is a <strong>minimum</strong> value of voltage gain that we can achieve.</p>
+<h3 id="procedure-1">Procedure</h3>
+<ol type="1">
+<li><p>Construct the <strong>non-inverting amplifier</strong> circuit shown below, using the same resistors that you used for the inverting amplifier.</p>
+<p><img src="images/Lab6Fig4.svg" alt="Diagram of non-inverting operational amplifier circuit" class="displayed" />&#160;</p></li>
+<li><p>Use the measured values of <em>R</em><sub>i</sub> and <em>R</em><sub>f</sub> to calculate the expected gain, <em>A</em><sub>E</sub>, of the non-inverting amplifier circuit. Be careful to use the correct sign and the appropriate number of significant digits in your answer.</p></li>
+<li><p>Adjust <em>V</em><sub>in</sub> to 0.25&#160;V &#177;&#160;0.01&#160;V. Measure and record the actual voltages <em>V</em><sub>in</sub> and <em>V</em><sub>out</sub> with at least three significant digits. Calculate and record the observed circuit gain, <em>A</em><sub>O</sub>, using the measured voltages.</p></li>
+<li><p>Calculate the gain error as before.</p>
+<p><img src="images/GenericCheck.svg" alt="Verify" /> If the gain error is greater than 2% you should double-check the construction of the amplifier circuit, your resistance measurements, and your voltage measurements.</p></li>
+<li><p>Adjust <em>V</em><sub>in</sub> to 0.50&#160;V &#177;&#160;0.02&#160;V. Measure <em>V</em><sub>in</sub> and <em>V</em><sub>out</sub>. Calculate <em>A</em><sub>O</sub> and &#916;<em>A</em> for these values of <em>V</em><sub>in</sub> and <em>V</em><sub>out</sub>.</p></li>
+<li><p>Adjust <em>V</em><sub>in</sub> to 1.00&#160;V &#177;&#160;0.05&#160;V. Measure <em>V</em><sub>in</sub> and <em>V</em><sub>out</sub>. Calculate <em>A</em><sub>O</sub> and &#916;<em>A</em> for these values of <em>V</em><sub>in</sub> and <em>V</em><sub>out</sub>.</p></li>
+<li><p>With <em>V</em><sub>in</sub> set to about 1.0&#160;V measure and record <em>V</em><sub>inv</sub>, the voltage at the inverting input of the operational amplifier. Repeat this measurement with <em>V</em><sub>in</sub> set to about 0.50&#160;V and about 0.25&#160;V.</p>
+<p>How does the measured value of <em>V</em><sub>inv</sub> change as you adjust the value of <em>V</em><sub>in</sub>? What can you say about the relationship between the voltages at the inverting and non-inverting inputs to the operational amplifier in this circuit?</p></li>
+</ol>
+<h2 id="voltage-follower">Voltage Follower</h2>
+<p>The <strong>voltage follower</strong> circuit is a very common and important application of the operational amplifier. One advantage of this simple circuit is that it provides a very precise value of gain without requiring precisely matched resistors.</p>
+<h3 id="procedure-2">Procedure</h3>
+<ol type="1">
+<li><p>Suppose that the non-inverting amplifier circuit is modified so that <em>R</em><sub>i</sub> is replaced with a resistor that is 100 times larger than <em>R</em><sub>f</sub>. What is the expected gain of the non-inverting amplifier?</p>
+<p>What is the value of the expected gain <em>A</em><sub>E</sub> if <em>R</em><sub>i</sub>&#160;=&#160;10000&#215;<em>R</em><sub>f</sub>? What happens to the expected gain value of the non-inverting amplifier as the value of <em>R</em><sub>i</sub> approaches infinity?</p></li>
+<li><p>A resistor with an infinite resistance is effectively an <strong>open circuit</strong>. In other words, such a resistor can simply be removed from circuit without changing the behavior of the circuit. Modify the non-inverting amplifier circuit by removing <em>R</em><sub>i</sub> as shown</p>
+<p><img src="images/Lab6Fig5.svg" alt="Diagram of non-inverting operational amplifier circuit without input resistor" class="displayed" />&#160;</p></li>
+<li><p>Use voltage measurements to determine the observed gain <em>A</em><sub>O</sub> of this circuit for <em>V</em><sub>in</sub> values of approximately 1.00&#160;V, 0.50&#160;V, and 0.25&#160;V. Calculate the gain error for each value of <em>V</em><sub>in</sub>.</p>
+<p><img src="images/GenericCheck.svg" alt="Verify" /> If the gain error is greater than 2% you should double-check the construction of the amplifier circuit and your voltage measurements.</p></li>
+<li><p>Observe the voltages at the inverting input of the operational amplifier, <em>V</em><sub>inv</sub>, and the output of the operational amplifier, <em>V</em><sub>out</sub>, as you change the value of <em>V</em><sub>in</sub>. What is the relationship between <em>V</em><sub>inv</sub> and <em>V</em><sub>out</sub> for this circuit?</p></li>
+<li><p>You should see that <em>V</em><sub>inv</sub> and <em>V</em><sub>out</sub> are essentially the same voltage, even though both of them will vary as you change <em>V</em><sub>in</sub>.</p>
+<p>If the voltages at <em>V</em><sub>inv</sub> and <em>V</em><sub>out</sub> are equal, then what is the voltage <strong>across</strong> <em>R</em><sub>f</sub>? How much current flows through <em>R</em><sub>f</sub>?</p>
+<p>If there is no current flowing through a resistor then what must be the voltage across the resistor, <strong>regardless of its resistance value</strong>?</p></li>
+<li><p>We can't simply discard <em>R</em><sub>f</sub> like we discarded <em>R</em><sub>i</sub>; without an electrical connection from the operational amplifier's output back to its inverting input there will be no negative feedback. However, an electrical connection between two nodes that are <strong>always at the same voltage</strong> is effectively a <strong>short circuit</strong>. In other words, <em>R</em><sub>f</sub> can be replaced by a simple wire.</p>
+<p>Replace <em>R</em><sub>f</sub> with a wire connecting the inverting input and output pins of the operational amplifier, resulting in the circuit shown below.</p>
+<p><img src="images/Lab6Fig6.svg" alt="Diagram of voltage follower operational amplifier circuit" class="displayed" />&#160;</p></li>
+<li><p>Use voltage measurements to determine the observed gain <em>A</em><sub>O</sub> of this circuit for <em>V</em><sub>in</sub> values of approximately 1.00&#160;V, 0.50&#160;V, and 0.25&#160;V. Calculate the gain error for each value of <em>V</em><sub>in</sub>. Note that the actual gain of this circuit is completely independent of any resistor values, so the observed gain should be very close to the expected gain.</p>
+<p><img src="images/GenericCheck.svg" alt="Verify" /> If the gain error is greater than 1% you should double-check the construction of the amplifier circuit and your voltage measurements.</p></li>
+<li><p>A voltage-follower circuit provides a voltage gain of almost exactly one (i.e.&#160;<strong>unity gain</strong>). This circuit is very useful despite the fact that the output voltage is just the same as the input voltage. Can you discuss an important practical use for this circuit? Is there a characteristic of the circuit, other than unity voltage gain, that might be advantageous in some circumstances?</p></li>
+</ol>
+<p><img src="images/CC_BY_SA_40.png" alt="&quot;Creative Commons Attribution ShareAlike License&quot;" style="width: 10%" /> K. Joseph Hass, 2016</p>
+</body>
+</html>

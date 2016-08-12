@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+      p {
+          line-height      : 130%;
+      }
+      code {
+          font-family      : "Courier New", Courier, monospace;
+          font-size        : 100%;
+      }
+      img {
+          vertical-align   : baseline;
+          margin           : 0;
+          padding          : 0;
+          border           : none;
+      }
+      img.displayed {
+          max-width        : 100%;
+          height           : auto;
+          display          : block;
+          margin-left      : auto;
+          margin-right     : auto;
+      }
+      img.margin {
+              float: left;
+      }
+      table {
+          margin-left      : auto;
+          margin-right     : auto;
+          margin-bottom    : 24px;
+          border-spacing   : 0;
+          border-bottom    : 2px solid black;
+          border-top       : 2px solid black;}
+      table th {
+          padding          : 3px 10px;
+          background-color : white;
+          border-top       : none;
+          border-left      : none;
+          border-right     : none;
+          border-bottom    : 1px solid black;
+      }
+      table td {
+          padding          : 3px 10px;
+          border-top       : none;
+          border-left      : none;
+          border-bottom    : none;
+          border-right     : none;
+      }
+  </style>
+</head>
+<body>
+<h1 id="making-laboratory-measurements">Making Laboratory Measurements</h1>
+<h2 id="measuring-resistance">Measuring Resistance</h2>
+<p>Unlike voltage or current, resistance can only be measured <strong>indirectly</strong>. An <em>ohmmeter</em> works by forcing a known current through its probes and measuring the resulting current or by applying a known voltage across the probes and measuring the current that flows. In either case, the ohmmeter will then use Ohm's Law to determine the effective resistance between the meter's probe tips.</p>
+<p>It's very important to remember that, because of how resistance is measured, you always need to isolate a circuit element from any other source of current or voltage before trying to measure its resistance. If you try to measure a resistor value while the resistor is connected to a voltage source or current source then the resistance reading will be incorrect. The image below shows how you might connect an ohmmeter to a resistor in order to measure its resistance. A pictorial illustration is shown on the left while the corresponding circuit schematic is shown on the right.</p>
+<p><img src="images/Lab1Fig6.svg" alt="meter measuring resistance" class="displayed" />&#160;</p>
+<h3 id="procedure">Procedure</h3>
+<ol type="1">
+<li><p>Configure your multimeter to measure resistance. <img src="images/GenericWarning14.svg" alt="warning" /> Make sure that the meter probes are plugged into the appropriate jacks for resistance measurements. Switch the meter's function knob to the resistance function, which is typically marked with the capital Greek letter omega (&#937;) symbol. If your meter has different switch positions for different resistance ranges, select the smallest range value that is greater than 10&#8239;k&#937;.</p></li>
+<li><p>Your instructor may provide you with three resistors to use for this part of the procedure. If you are choosing resistors yourself you should select resistors with three different values between 1&#8239;k&#937; and 10&#8239;k&#937;.</p></li>
+<li><p>Record the colors of the bands<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> on each resistor, including the band (if any) that indicates the resistor's tolerance. Use the resistor color code to determine the marked resistance value for each resistor and record these values.</p></li>
+<li><p>Use your multimeter to measure the actual value of the three resistors. Record these values with (at least) three significant digits.</p></li>
+<li><p>Calculate and record the error (as a percentage) between the marked resistor value and the measured resistance for each resistor. Use this formula to calculate the error:</p>
+<p><span class="math display">\[Resistance Error = \frac{Marked Value - Measured Value}{Marked Value}
+\times 100\%\]</span></p>
+<p>If the difference between measured resistance and the marked resistance exceeds the tolerance marked on the resistor, double-check your work. Make sure that you recorded the correct colors for the bands&#8230;it's easy to confuse similar colors such as brown and violet or red and orange.</p></li>
+</ol>
+<!--
+    ![](images/Lab1Eq1 "Resistance error is equal to the marked value minus the measured value, divided by the marked value, then times one hundred percent")
+
+    \\[Resistance Error = \frac{Marked Value - Measured Value}{Marked Value}
+    \times 100\%\\]
+-->
+<h2 id="measuring-voltage">Measuring Voltage</h2>
+<p>You can use the multimeter to directly measure the voltage across any circuit element, or between any two points in a circuit. When it's configured to measure a voltage we can refer to the multimeter as a <em>voltmeter</em>.</p>
+<p>It's important to keep in mind that when we talk about a <em>voltage</em> that we are always referring to a <em>voltage difference</em> between two points in a circuit, and the word <em>difference</em> suggests that we are subtracting one value from another value.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> The order of the values matters when you perform subtraction&#8230;if you subtract a smaller value from a larger value you get a positive result, but if you subtract a larger value from a smaller value you will get a negative value. The same thing happens when you measure a voltage difference: depending on how you connect the two multimeter probes to the circuit the meter may give a positive reading or a negative reading.</p>
+<p>You must pay attention to where the black and red probes are connected to the circuit to understand what the meter is telling you. If the meter produces a positive voltage reading it means that the voltage increases as current moves from the black probe point to the red probe point. In other words, the charge at the red probe has more potential energy than the charge at the black probe point. The image below shows how you might connect a voltmeter to a battery in order to measure its voltage.</p>
+<p><img src="images/Lab1Fig4.svg" alt="meter measuring positive battery voltage" class="displayed" />&#160;</p>
+<p>On the other hand, a negative voltage reading means that the charge at the red probe point has <em>less</em> energy than the charge at the black probe point. In this case the voltage <em>decreases</em> as current moves from the red probe point to the black probe point. If you prefer a mathematical interpretation, consider that the meter reading indicates how much greater the voltage is at the red probe point with respect to the black probe point; if the reading is negative it simply means that the voltage is actually greater at the point where you connected the black probe.</p>
+<p><img src="images/Lab1Fig5.svg" alt="meter measuring negative battery voltage" class="displayed" />&#160;</p>
+<p>To avoid confusion when we specify or record a voltage value we need a way to describe how the meter probes are connected to the circuit. The most common method is to use the letter <em>V</em> (in italics) to represent a voltage value, then add a subscript to indicate the two points in the circuit where the voltage is measured and which of the points is assumed to have the higher electric potential. For example, if we have two circuit nodes labelled <strong>A</strong> and <strong>B</strong> then the voltage between them, with the red probe connected to node <strong>A</strong> and the black probe on node <strong>B</strong>, would be referred to as <em>V</em><sub>AB</sub>. We could also describe <em>V</em><sub>AB</sub> as the voltage <em>increase</em> from point <strong>B</strong> to point <strong>A</strong>. If we reverse the connections of the red and black probes then the voltage reading will be <em>V</em><sub>BA</sub>, the voltage increase from node <strong>B</strong> to node <strong>A</strong>. Mathematically, it must always be true that <em>V</em><sub>AB</sub> = -<em>V</em><sub>BA</sub>.</p>
+<h3 id="procedure-1">Procedure</h3>
+<ol type="1">
+<li><p>Configure your multimeter to measure voltage. Make sure that the meter probes are plugged into the appropriate jacks for voltage measurements, and that the black probe is in the meter's <strong>COMMON</strong> jack. Switch the meter's function knob to the DC voltage function, which is typically marked with the letter <strong>V</strong>. If the meter function is not marked with the letters <strong>DC</strong> look for a symbol that has a horizontal solid line above a dashed line (<img src="images/GenericDCIcon.svg" alt="DC voltage icon" />). If your meter has different switch positions for different voltage ranges, select the smallest range value that is greater than 10&#8239;V.</p></li>
+<li><p>Construct the circuit shown below using the three resistors from the first part of the lab procedure. The letters <strong>A</strong>, <strong>B</strong>, <strong>C</strong>, and <strong>D</strong> are just the names given to the four signal nodes in the circuit. You can use a bench power supply or a common 9&#8239;V battery as the voltage source. If you use an adjustable power supply, set the voltage to 9&#177;0.1&#8239;V.</p>
+<p><img src="images/Lab1Fig1.svg" alt="&quot;Three resistors in series with a nine volt source&quot;" class="displayed" />&#160;</p></li>
+<li><p>Connect the multimeter to the circuit as shown below. Note that with the red probe connected to circuit node <strong>A</strong> and the black probe connected to node <strong>D</strong> the reading on the voltmeter is correctly called <em>V</em><sub>AD</sub>, which indicates how much greater the voltage at node <strong>A</strong> is than the voltage at node <strong>D</strong>. If you have connected the probes as shown then the meter reading should be a <em>positive</em> value. Record the measured voltage, with at least 3 significant digits.</p>
+<p><img src="images/Lab1Fig2.svg" alt="&quot;Connecting a voltmeter across the voltage source&quot;" class="displayed" />&#160;</p></li>
+<li><p>Now move clockwise around the circuit: move the black probe to the same circuit node as the red probe (<strong>A</strong>) then move the red probe to the next circuit node (<strong>B</strong>). Measure the voltage across each resistor. The voltages across R1, R2, and R3 will be <em>V</em><sub>BA</sub>, <em>V</em><sub>CB</sub>, and <em>V</em><sub>DC</sub>, respectively. If you have connected the meter probes correctly then all of these values will be <em>negative</em>. Record the measured voltages.</p></li>
+<li><p>Calculate the sum of the four voltage measurements. Given that each of your voltage measurements has a possible error of about &#177;0.1&#8239;V, does it appear that Kirchhoff's Voltage Law is satisfied around this loop? Justify your answer.</p></li>
+<li><p>Reverse the connections of the multimeter to the voltage source as shown below. The voltmeter reading is now <em>V</em><sub>DA</sub> and should be a negative value. Record the measured voltage, with at least 3 significant digits.</p>
+<p><img src="images/Lab1Fig3.svg" alt="&quot;Connecting a voltmeter across the voltage source&quot;" class="displayed" />&#160;</p></li>
+<li><p>Now move counterclockwise around the circuit and measure the voltage across each resistor. The voltages across R3, R2, and R1 will be <em>V</em><sub>CD</sub>, <em>V</em><sub>BC</sub>, and <em>V</em><sub>AB</sub>, respectively. If you have connected the meter probes correctly then all of these values will be positive. Record the measured voltages.</p></li>
+<li><p>Calculate the sum of the four voltage measurements. Given that each of your voltage measurements has a possible error of about &#177;0.1&#8239;V, does it appear that Kirchhoff's Voltage Law is satisfied around this loop? Justify your answer.</p></li>
+</ol>
+<h2 id="measuring-current">Measuring Current</h2>
+<p>Measuring devices that are specifically designed to measure current are called <em>ammeters</em>, but a common digital multimeter can usually be configured to measure current. Multimeters typically have separate jacks for the red probe that must be used when measuring current (rather than voltage or resistance), and there may be different jacks for measuring low current and measuring high current.</p>
+<p>In order to measure a current with a meter you must allow that current to flow <em>through</em> the meter. This means that you must <em>break</em> the existing current path in the circuit and connect the ammeter so the current will flow through it, as shown in the image below.</p>
+<p><img src="images/Lab1Fig7.svg" alt="&quot;Connecting an ammeter between a voltage source and a resistor&quot;" class="displayed" />&#160;</p>
+<p>The current readings may be positive or negative, depending on how you choose to connect the red and black probes from the meter.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> The meter always indicates the amount of current <em>entering</em> on the red probe and returning to the circuit through the black probe. If the meter reading is positive then a positive current is actually flowing in that direction: from the red probe to the black probe. On the other hand, if the meter reading is negative then the direction of positive current is reversed: a positive current flows from the black probe to the red probe.</p>
+<p><img src="images/GenericWarning14.svg" alt="warning" /> It's easy to damage a multimeter when you are trying to measure current but incorrectly connect the meter to a circuit. Please read these instructions carefully before you make any measurements.</p>
+<p>Now, when making any measurement one of our goals is that the measuring device should not significantly change the behavior of the circuit. If we have two wires connected together in a circuit there will be no significant voltage difference between those two wires, so if we break the connection between the wires and insert an ammeter we would hope that the voltage across the meter would also be very small. So, ammeters must be designed so that the effective resistance through them is also very low.</p>
+<p><img src="images/Lab1Fig11.svg" alt="&quot;Incorrect connection of ammeter&quot;" class="displayed" />&#160;</p>
+<p><img src="images/GenericWarning14.svg" alt="warning" /> Unfortunately, if you connect an ammeter (a very low resistance) directly across the terminals of a strong voltage source then a very large current may flow and damage the meter. This situation often occurs accidentally when you are measuring currents and then decide to measure the supply voltage without reconfiguring the meter. Most meters include a fuse in series with the probes to prevent damage when excessive current flows, but if you accidentally blow the fuse you won't be able to make current measurements until the fuse is replaced, and the special fuses used in meters can be expensive.</p>
+<h3 id="procedure-2">Procedure</h3>
+<ol type="1">
+<li><p>Configure your multimeter to measure current. Make sure that the meter probes are plugged into the appropriate jacks for current measurements. and switch the meter's function knob to the DC current function, which is typically marked with the letter <strong>A</strong>. If your meter has different switch positions for different voltage ranges, select the smallest range value that is greater than 2&#8239;mA.</p></li>
+<li><p>Connect the meter to the resistor circuit as shown below. Break the connection between R1 and R2 at node <strong>B</strong>. Connect the red probe of the meter to the free end of R1 and connect the black probe to the free end of R2. Note that we have effectively split node <strong>B</strong> into two new nodes, <strong>B1</strong> and <strong>B2</strong>, but if we use an ideal ammeter then there is no voltage difference between these two nodes and the presence of the meter does not affect the behavior of the circuit.</p>
+<p><img src="images/Lab1Fig8.svg" alt="&quot;Connecting an ammeter between two resistors&quot;" class="displayed" />&#160;</p></li>
+<li><p>The meter reading now indicates the current flowing <strong>clockwise</strong> around the circuit loop, <em>I</em><sub>CW</sub>. Record the current measurement.</p></li>
+<li><p>Reverse the meter probes, so that the red probe is connected to R2 and the black probe is connected to R1. The meter reading now indicates the current flowing <em>counter-clockwise</em> around the circuit loop, <em>I</em><sub>CCW</sub>. Record the current measurement.</p>
+<p><img src="images/Lab1Fig9.svg" alt="&quot;Connecting an ammeter between two resistors&quot;" class="displayed" />&#160;</p></li>
+<li><p>Based on your understanding of how a current measurement is affected by the connections of the red and black probes, does it appear that the measurement of <em>I</em><sub>CW</sub> and <em>I</em><sub>CCW</sub> are <strong>consistent</strong>? Note that the word <strong>consistent</strong> does not necessarily mean <strong>the same</strong>. Justify your answer.</p></li>
+<li><p>Connect the meter between R2 and R3 at node <strong>C</strong> as shown below, with the red probe connected to R2 and the black probe connected to R3. Don't forget to reconnect R1 and R2 at node <strong>B</strong>.</p>
+<p><img src="images/Lab1Fig10.svg" alt="&quot;Connecting an ammeter between two resistors&quot;" class="displayed" />&#160;</p></li>
+<li><p>The meter reading once again indicates the current flowing <em>clockwise</em> around the circuit loop, <em>I</em><sub>CW</sub>. Record the current measurement.</p></li>
+<li><p>Based on your understanding of how current flows in a circuit, does it appear that the two measurements of <em>I</em><sub>CW</sub> (at nodes <strong>B</strong> and <strong>C</strong>) are consistent? Justify your answer.</p></li>
+</ol>
+<p><img src="images/CC_BY_SA_40.png" alt="&quot;Creative Commons Attribution ShareAlike License&quot;" style="width: 10%" /> K. Joseph Hass, 2016</p>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>If you abbreviate the color names be sure to use unambiguous abbreviations. Avoid using <strong>BL</strong>; use <strong>BK</strong> for black and <strong>BU</strong> for blue. Likewise, use <strong>GN</strong> for green and <strong>GY</strong> for gray instead of <strong>GR</strong> for either color. These are the abbreviations recommended by the IEC 60757 standard.<a href="#fnref1">&#8617;</a></p></li>
+<li id="fn2"><p>Unlike temperature, resistance, and current, there isn't an <em>absolute zero</em> value for voltage. Physicists can define a theoretical situation with a point in space that has no electric potential (i.e. &quot;zero voltage&quot;) but that doesn't help us measure voltages in the lab. Sometimes we will pick some point in a circuit, call it &quot;ground&quot;, and measure all other voltages with respect to that point but there will always be some point in the universe with a lower electric potential than &quot;ground&quot;.<a href="#fnref2">&#8617;</a></p></li>
+<li id="fn3"><p>Typical meters measure conventional (positive) current flow rather than electron (negative) flow.<a href="#fnref3">&#8617;</a></p></li>
+</ol>
+</section>
+</body>
+</html>

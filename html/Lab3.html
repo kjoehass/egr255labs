@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+      p {
+          line-height      : 130%;
+      }
+      code {
+          font-family      : "Courier New", Courier, monospace;
+          font-size        : 100%;
+      }
+      img {
+          vertical-align   : baseline;
+          margin           : 0;
+          padding          : 0;
+          border           : none;
+      }
+      img.displayed {
+          max-width        : 100%;
+          height           : auto;
+          display          : block;
+          margin-left      : auto;
+          margin-right     : auto;
+      }
+      img.margin {
+              float: left;
+      }
+      table {
+          margin-left      : auto;
+          margin-right     : auto;
+          margin-bottom    : 24px;
+          border-spacing   : 0;
+          border-bottom    : 2px solid black;
+          border-top       : 2px solid black;}
+      table th {
+          padding          : 3px 10px;
+          background-color : white;
+          border-top       : none;
+          border-left      : none;
+          border-right     : none;
+          border-bottom    : 1px solid black;
+      }
+      table td {
+          padding          : 3px 10px;
+          border-top       : none;
+          border-left      : none;
+          border-bottom    : none;
+          border-right     : none;
+      }
+  </style>
+</head>
+<body>
+<h1 id="resistors-and-ohms-law">Resistors and Ohm's Law</h1>
+<h2 id="series-and-parallel-resistors">Series and Parallel Resistors</h2>
+<h3 id="procedure">Procedure</h3>
+<ol type="1">
+<li><p>Your instructor may provide you with three resistors to use for this part of the procedure. If you are choosing resistors yourself you should select resistors with three different values between 1&#160;k&#937; and 10&#160;k&#937;.</p></li>
+<li><p>Record the colors of the bands on each resistor, including the band (if any) that indicates the resistor's tolerance. Use the resistor color code to determine the marked resistance value for each resistor and record these values.</p></li>
+<li><p>Use your multimeter to measure the actual value of the three resistors. Record these values with (at least) three significant digits.</p></li>
+<li><p><img src="images/GenericCheck.svg" alt="Verify" /> Verify that the measured value agrees with the marked value of each resistor, within the tolerance value indicated by the color bands. If not, repeat the previous two steps.</p></li>
+<li><p>Use the <strong>measured</strong> resistance values to calculate the equivalent resistance of R2 in parallel with R3, which we will refer to as R23.</p></li>
+<li><p>Use the <strong>measured</strong> resistance values to calculate the equivalent resistance of R1 in series with R23, which we will refer to as REQ (for the <strong>EQ</strong>uivalent resistance).</p></li>
+<li><p>Construct the resistor network shown below. (This is not yet a <strong>circuit</strong> because there is not a complete path for the flow of current, so we use the term <strong>network</strong> to describe a group of interconnected electrical elements.)</p>
+<p><img src="images/Lab3Fig1.svg" alt="Network of three resistors" class="displayed" />&#160;</p></li>
+<li><p>Measure and record the resistance between nodes <strong>B</strong> and <strong>C</strong>. How does the measured value compare to the calculated value of R23? If these values differ by more than 1% you should double-check your measurements and calculations. (<img src="images/GenericWarning11.svg" alt="Warning" /> Note that this measurement must be made <strong>before</strong> the resistors are connected into a complete circuit, as shown in the figure above.)</p></li>
+<li><p>Measure and record the resistance between nodes <strong>A</strong> and <strong>C</strong>. How does the measured value compare to the calculated value of REQ?<br />
+<img src="images/GenericCheck.svg" alt="Verify" /> If these values differ by more than 1% you should double-check your measurements and calculations.</p></li>
+</ol>
+<h2 id="ohms-law">Ohm's Law</h2>
+<ol type="1">
+<li><p>Add a voltage source and complete the circuit as shown below.</p>
+<p><img src="images/Lab3Fig2.svg" alt="Circuit with three resistors and voltage source" class="displayed" />&#160;</p></li>
+<li><p>Measure and record the supply voltage, <em>V</em><sub>AC</sub>, with at least three significant digits.</p></li>
+<li><p>If we replace the three resistors with their equivalent resistance, REQ, as you calculated above, we can redraw the circuit as shown below. This trivial circuit has only two elements, the voltage source and REQ. These elements are in <em>series</em> so it must be true that the current provided by the voltage source, <em>I</em><sub>SRC</sub>, is exactly the same as the current flowing through REQ. The elements are also in parallel so it must be true that the voltage across the resistor is the same as the voltage provided by the voltage source. Given the calculated value of REQ and the measured supply voltage, use Ohm's Law to calculate the value of <em>I</em><sub>SRC</sub>.</p>
+<p><img src="images/Lab3Fig3.svg" alt="Circuit with equivalent resistance and voltage source" class="displayed" />&#160;</p></li>
+<li><p>Break the circuit connection at node <strong>A</strong>, between the voltage source and R1, and measure <em>I</em><sub>SRC</sub>. Be careful to note the direction of the current arrow when you place the red and black probes. How does the measured value of <em>I</em><sub>SRC</sub> compare to the value you calculated above?<br />
+<img src="images/GenericCheck.svg" alt="Verify" /> If the difference between these values is greater than 5% you should double-check your work.</p>
+<p><img src="images/Lab3Fig4.svg" alt="Network of three resistors" class="displayed" />&#160;</p></li>
+<li><p>The circuit can also be drawn as shown below, where REQ is replaced with R1 and R23 (the parallel combination of R2 and R3). This is an equivalent circuit to the one shown above, so it must be true that the current provided by the source is still <em>I</em><sub>SRC</sub>. Therefore, we know that <em>I</em><sub>SRC</sub> is the current flowing through R1 and also through R23. Use Ohm's Law to calculate the voltage across R1 (<em>V</em><sub>AB</sub>) and the voltage across R23 (<em>V</em><sub>BC</sub>).</p></li>
+<li><p><img src="images/GenericWarning11.svg" alt="Warning" /> Reconfigure your multimeter to measure voltage. Measure and record the voltages <em>V</em><sub>AB</sub> and <em>V</em><sub>BC</sub> with at least three significant digits. How do the measured values compare to the values you calculated using Ohm's Law above?<br />
+<img src="images/GenericCheck.svg" alt="Verify" /> If the difference between these values is greater than 5% you should double-check your work.</p></li>
+<li><p>Suppose we apply Kirchhoff's Voltage Law to the loop formed by the voltage source, R1, and R23. What can you say about the relationship between the supply voltage, <em>V</em><sub>AC</sub>, and the voltage drops across R1 and R23?<br />
+<img src="images/GenericCheck.svg" alt="Verify" /> Are your calculations and measurements consistent with your expectations?</p></li>
+<li><p>The schematic below shows the original circuit configuration, with the addition of labels for currents <em>I</em><sub>R2</sub> and <em>I</em><sub>R3</sub>. Use Ohm's Law to calculate these two current values using the measured value of <em>V</em><sub>BC</sub> and the measured values of R2 and R3.</p>
+<p><img src="images/Lab3Fig5.svg" alt="Network of three resistors" class="displayed" />&#160;</p></li>
+<li><p>Considering the values you have calculated for <em>I</em><sub>SRC</sub>, <em>I</em><sub>R2</sub>, and <em>I</em><sub>R3</sub>, does it appear that Kirchhoff's Current Law is satisfied at node <strong>B</strong>? Explain your answer.</p></li>
+<li><p>Reconfigure your multimeter to measure current. Break the connection between R2 and node <strong>B</strong> and measure <em>I</em><sub>R2</sub>. Reconnect R2 to node <strong>B</strong>. Disconnect R3 from node <strong>B</strong> and measure <em>I</em><sub>R3</sub>. How do the calculated values of these currents compare to their measured values?<br />
+<img src="images/GenericCheck.svg" alt="Verify" /> If the difference between the calculated and measured values is greater than 5% you should double-check your work.</p></li>
+<li><p><img src="images/GenericWarning11.svg" alt="Warning" /> To avoid accidental damage, you should reconfigure your multimeter to measure voltage.</p></li>
+</ol>
+<p><img src="images/CC_BY_SA_40.png" alt="&quot;Creative Commons Attribution ShareAlike License&quot;" style="width: 10%" /> K. Joseph Hass, 2016</p>
+</body>
+</html>

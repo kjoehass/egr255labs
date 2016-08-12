@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+      p {
+          line-height      : 130%;
+      }
+      code {
+          font-family      : "Courier New", Courier, monospace;
+          font-size        : 100%;
+      }
+      img {
+          vertical-align   : baseline;
+          margin           : 0;
+          padding          : 0;
+          border           : none;
+      }
+      img.displayed {
+          max-width        : 100%;
+          height           : auto;
+          display          : block;
+          margin-left      : auto;
+          margin-right     : auto;
+      }
+      img.margin {
+              float: left;
+      }
+      table {
+          margin-left      : auto;
+          margin-right     : auto;
+          margin-bottom    : 24px;
+          border-spacing   : 0;
+          border-bottom    : 2px solid black;
+          border-top       : 2px solid black;}
+      table th {
+          padding          : 3px 10px;
+          background-color : white;
+          border-top       : none;
+          border-left      : none;
+          border-right     : none;
+          border-bottom    : 1px solid black;
+      }
+      table td {
+          padding          : 3px 10px;
+          border-top       : none;
+          border-left      : none;
+          border-bottom    : none;
+          border-right     : none;
+      }
+  </style>
+</head>
+<body>
+<h1 id="th&#233;venin-equivalent-circuits">Th&#233;venin Equivalent Circuits</h1>
+<p>Suppose we pick any two nodes (<strong>A</strong> and <strong>B</strong>) in a linear circuit and connect various resistors between the two nodes. There must be a <strong>linear</strong> relationship between the voltage across the resistor, <em>V</em><sub>LOAD</sub>, and the current through the resistor, <em>I</em><sub>LOAD</sub>. It doesn't matter how many components are in the circuit or how complex its connections may be, as long as the circuit contains only linear components then it must exhibit this linear voltage/current relationship between any pair of nodes that we select.</p>
+<p><img src="images/Lab5Fig1.svg" alt="Thevenin equivalent circuit" class="displayed" />&#160;</p>
+<p>Th&#233;venin's Theorem tells us that we can construct an equivalent circuit consisting of just one voltage source and one resistor, and this equivalent circuit will display <strong>exactly</strong> the same relationship between <em>V</em><sub>LOAD</sub> and <em>I</em><sub>LOAD</sub>. The ability to create a simple <strong>Th&#233;venin Equivalent Circuit</strong> for a very complex linear circuit is a powerful tool for circuit analysis and modeling.</p>
+<p><img src="images/Lab5Fig2.svg" alt="Thevenin equivalent circuit" class="displayed" />&#160;</p>
+<h2 id="test-circuit">Test Circuit</h2>
+<h3 id="procedure">Procedure</h3>
+<ol type="1">
+<li>Your instructor may provide you with a test circuit to use for this procedure. If not, construct the circuit shown below. You will need an adjustable power supply for this procedure; it should be used for the voltage source shown in the schematic.</li>
+</ol>
+<p><img src="images/Lab5Fig4.svg" alt="Test circuit" class="displayed" />&#160;</p>
+<h2 id="current-and-voltage-measurements">Current and Voltage Measurements</h2>
+<p>If we draw a graph of the voltage-vs.-current behavior of a linear circuit we know that the result will be a line. Remember that we can completely define any given line if we know the <strong>coordinates</strong> of any two points on the line. For this laboratory procedure the coordinates of each point are just the voltage and current that result when some load is connected across the terminals of the linear circuit.</p>
+<h3 id="procedure-1">Procedure</h3>
+<ol type="1">
+<li><p>The easiest voltage/current point to measure is the <strong>open-circuit voltage</strong>, or <em>V</em><sub>OC</sub>. This is the voltage difference between the circuit terminals when there is no load connected to them, which means that there is no current flowing between the two terminals (<em>I</em><sub>OC</sub> = 0&#160;A). In most cases the equivalent input resistance of a voltmeter is very high compared to typical circuit resistances, so we can assume that no current flows through the meter.</p></li>
+<li><p>Use the multimeter to measure the voltage <em>V</em><sub>AB</sub> with no other load connected to the circuit. Record this open-circuit voltage.</p></li>
+<li><p>In theory, you could connect an ideal ammeter across the circuit terminals and directly measure the <strong>short-circuit current</strong>, <em>I</em><sub>SC</sub>. <img src="images/GenericWarning11.svg" alt="Warning" /> <strong>DO NOT</strong> try this. An ideal ammeter has a resistance of zero ohms, which is our definition of a short-circuit, and even a low-cost real ammeter will have a very low effective resistance. Connecting a very small resistance between two circuit nodes may cause a <strong>very large</strong> current to flow through the ammeter. Under the best of circumstances the large current will blow a fuse in the meter; in the worst case the meter may be permanently damaged.</p></li>
+<li><p>A much safer method of obtaining voltage/current data points is to place a load resistor across the circuit terminals and measure the voltage across the load. The current value can then be calculated using Ohm's Law. We already have one data point, <em>V</em><sub>OC</sub>. To reduce the effect of measurement error when calculating the slope of the line we would like to have another data point that is not too close to <em>V</em><sub>OC</sub>. You will use an <strong>iterative</strong> procedure to find such a data point, between (0.25&#160;&#10761;&#160;<em>V</em><sub>OC</sub>) and (0.75&#160;&#10761;&#160;<em>V</em><sub>OC</sub>).</p>
+<p><img src="images/Lab5Fig3.svg" alt="Test circuit with load resistor" class="displayed" />&#160;</p></li>
+<li><p>Start by connecting a 100&#160;k&#937; <strong>load resistor</strong> across the circuit terminals. Measure <em>V</em><sub>AB</sub> with the resistor in place. If <em>V</em><sub>AB</sub>&#160;&gt;&#160;(0.75&#160;&#10761;&#160;<em>V</em><sub>OC</sub>) then replace the resistor with one that has about <strong>one-half</strong> as much resistance. If <em>V</em><sub>AB</sub>&#160;&lt;&#160;(0.25&#160;&#10761;&#160;<em>V</em><sub>OC</sub>) then replace the resistor with one that has about <strong>twice</strong> as much resistance.</p></li>
+<li><p>Repeat the process of measuring the load voltage and changing the load resistor value until you find a resistor that results in a load voltage (<em>V</em><sub>AB</sub>) between (0.25&#160;&#10761;&#160;<em>V</em><sub>OC</sub>) and (0.75&#160;&#10761;&#160;<em>V</em><sub>OC</sub>). Record this voltage as <em>V</em><sub>LOAD</sub>. Remove the load resistor and carefully measure its resistance value, which will be called <em>R</em><sub>LOAD</sub>.</p></li>
+<li><p>Use Ohm's Law to calculate the current <em>I</em><sub>LOAD</sub> flowing through the resistor, using your measured values for <em>V</em><sub>LOAD</sub> and <em>R</em><sub>LOAD</sub>.</p></li>
+<li><p>Use the two voltage/current data points (<em>V</em><sub>OC</sub>/0 and <em>V</em><sub>LOAD</sub>/<em>I</em><sub>LOAD</sub>) and Ohm's Law to calculate the equivalent Th&#233;venin resistance of the linear circuit.</p></li>
+<li><p>Draw a sketch of the Th&#233;venin equivalent circuit for the test circuit. Your sketch should include a voltage source and a resistor, labeled with their correct values.</p></li>
+</ol>
+<h2 id="th&#233;venin-equivalent-circuit">Th&#233;venin Equivalent Circuit</h2>
+<p>Now you will construct the Th&#233;venin equivalent circuit and verify that it is equivalent to the test circuit. Remember that in this context the two circuits are &quot;equivalent&quot; if they have the same voltage/current behavior at nodes <strong>A</strong> and <strong>B</strong>.</p>
+<h3 id="procedure-2">Procedure</h3>
+<ol type="1">
+<li><p>There are several ways that you can create an appropriate resistance to use for <em>R</em><sub>TH</sub>.</p>
+<ul>
+<li><p>Use a resistor substitution box as the Th&#233;venin resistance, <em>R</em><sub>TH</sub>. Set the resistance of the substitution box to the desired value.</p></li>
+<li><p>Select a standard fixed resistor with a value that is about 90% of the desired <em>R</em><sub>TH</sub>. Select a potentiometer with a value that is about 20% of the desired <em>R</em><sub>TH</sub>. Connect the fixed resistor and potentiometer in series. While measuring the combined resistance with a meter, adjust the potentiometer until the effective resistance is within &#177;2% of <em>R</em><sub>TH</sub>.</p></li>
+<li><p>Select a standard fixed resistor with the value that is closest to <em>R</em><sub>TH</sub>. Use a meter to verify that the resistance is within &#177;5% of <em>R</em><sub>TH</sub>.</p></li>
+</ul>
+<p>Measure and record the actual resistance of your chosen <em>R</em><sub>TH</sub>.</p></li>
+<li><p>Use an adjustable power supply as the voltage source in the equivalent circuit. Adjust the output voltage to be equal to <em>V</em><sub>TH</sub>, within &#177;2%.</p></li>
+<li><p>Connect the resistor substitution box and adjustable power supply to form the equivalent circuit.</p></li>
+<li><p>Measure and record the open-circuit voltage of the equivalent circuit, just as you did above for the test circuit.<br />
+<img src="images/GenericCheck.svg" alt="Verify" /> <em>V</em><sub>OC</sub> for the equivalent circuit should be within &#177;5% of the <em>V</em><sub>OC</sub> of the test circuit. If not, check your work.</p></li>
+<li><p>Connect the <em>R</em><sub>LOAD</sub> resistor to the equivalent circuit at nodes <strong>A</strong> and <strong>B</strong>.</p></li>
+<li><p>Measure and record the voltage <em>V</em><sub>LOAD</sub> of the equivalent circuit, just as you did above for the test circuit.<br />
+<img src="images/GenericCheck.svg" alt="Verify" /> <em>V</em><sub>LOAD</sub> for the equivalent circuit should be within &#177;5% of the <em>V</em><sub>LOAD</sub> of the test circuit. If not, check your work.</p></li>
+</ol>
+<p><img src="images/CC_BY_SA_40.png" alt="&quot;Creative Commons Attribution ShareAlike License&quot;" style="width: 10%" /> K. Joseph Hass, 2016</p>
+</body>
+</html>

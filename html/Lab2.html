@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+      p {
+          line-height      : 130%;
+      }
+      code {
+          font-family      : "Courier New", Courier, monospace;
+          font-size        : 100%;
+      }
+      img {
+          vertical-align   : baseline;
+          margin           : 0;
+          padding          : 0;
+          border           : none;
+      }
+      img.displayed {
+          max-width        : 100%;
+          height           : auto;
+          display          : block;
+          margin-left      : auto;
+          margin-right     : auto;
+      }
+      img.margin {
+              float: left;
+      }
+      table {
+          margin-left      : auto;
+          margin-right     : auto;
+          margin-bottom    : 24px;
+          border-spacing   : 0;
+          border-bottom    : 2px solid black;
+          border-top       : 2px solid black;}
+      table th {
+          padding          : 3px 10px;
+          background-color : white;
+          border-top       : none;
+          border-left      : none;
+          border-right     : none;
+          border-bottom    : 1px solid black;
+      }
+      table td {
+          padding          : 3px 10px;
+          border-top       : none;
+          border-left      : none;
+          border-bottom    : none;
+          border-right     : none;
+      }
+  </style>
+</head>
+<body>
+<h1 id="series-parallel-circuits">Series &amp; Parallel Circuits</h1>
+<h2 id="series-circuits">Series Circuits</h2>
+<h3 id="procedure">Procedure</h3>
+<ol type="1">
+<li><p>Select two resistors with different values between 1&#8239;k&#937; and 10&#8239;k&#937;. The value of one resistor should be at least twice the resistance of the other resistor. For example, you could use 2.2&#8239;k&#937; and 5.1&#8239;k&#937; resistors. These resistors will be referred to as R1 and R2 for the rest of this lab procedure.</p></li>
+<li><p>Record the colors of the bands on each resistor, including the band that indicates the resistor's tolerance. Use the resistor color code to determine the marked resistance value and tolerance for each resistor and record these values.</p></li>
+<li><p>Use your multimeter to measure the actual value of the resistors. Record these values with (at least) three significant digits.</p></li>
+<li><p>Verify that the measured and marked values of each resistor are consistent, within the appropriate tolerance. If not, double-check your work. Do not proceed until you have resolved any discrepancies.</p></li>
+<li><p>Construct the circuit shown below. You may use an adjustable power supply or a 9&#8239;V battery as the voltage source.</p>
+<p><img src="images/Lab2Fig1.svg" alt="Two series resistors with voltage source" class="displayed" />&#160;</p></li>
+<li><p>Measure and record <em>V</em><sub>AC</sub>, <em>V</em><sub>BA</sub>, and <em>V</em><sub>BC</sub>, the voltages across the voltage source, R1, and R2. Be careful to connect the red and black probes as needed to make the requested measurements. If all of the values are positive or all of the values are negative then you should double-check your measurements.</p></li>
+<li><p>Calculate the sum of the three voltage measurements. Given that each of your voltage measurements has a possible error of about &#177;0.1&#8239;V, does it appear that Kirchhoff's Voltage Law is satisfied around this loop? Justify your answer.</p></li>
+<li><p>Measure and record the voltages across the circuit elements again, this time reversing the locations of the red and black probes. The resulting measurements will be <em>V</em><sub>CA</sub>, <em>V</em><sub>AB</sub>, and <em>V</em><sub>CB</sub>.</p></li>
+<li><p>Calculate the sum of the three voltage measurements. Does it appear that Kirchhoff's Voltage Law is satisfied around this loop? Justify your answer.</p></li>
+<li><p>Break the connection between R1 and the voltage source at node <strong>A</strong>. Configure your multimeter to measure current and connect it between the voltage source and R1. Be careful to connect the red and black probes so the meter reading will correspond to <em>I</em><sub>A</sub>, the current flowing from the voltage source toward R1. Record the current measurement.</p></li>
+<li><p>Repeat the current measurements to determine the values of <em>I</em><sub>B</sub> and <em>I</em><sub>C</sub>. Record the measured values.</p></li>
+<li><p>The three elements in this circuit are all in series. Are the three current measurements consistent with the electrical definition of <strong>series elements</strong>? Justify your answer.</p></li>
+</ol>
+<h2 id="parallel-circuits">Parallel Circuits</h2>
+<h3 id="procedure-1">Procedure</h3>
+<ol type="1">
+<li><p>Select one more resistor with a value between 1&#8239;k&#937; and 10&#8239;k&#937; that has a different value than either R1 or R2. This resistor will be referred to as R3 for the rest of this lab procedure.</p></li>
+<li><p>Record the colors of the bands on R3, including the tolerance band. Determine the marked resistance value and tolerance for R3 and record these values.</p></li>
+<li><p>Use your multimeter to measure the actual value of R3. Record this value with (at least) three significant digits.</p></li>
+<li><p>Construct the circuit shown below. Note that resistors R1 and R2 are now connected in parallel. The effective parallel resistance of R1 and R2 is in series with R3.</p>
+<p><img src="images/Lab2Fig2.svg" alt="Two parallel, one series resistor with voltage source" class="displayed" />&#160;</p></li>
+<li><p>Measure the three currents <strong>leaving</strong> node <strong>B</strong>, as shown in the image below. These three currents flow out of node <strong>B</strong> through the three resistors. (For example, <em>I</em><sub>OB3</sub> is the current <strong>O</strong>ut of node <strong>B</strong> through R<strong>3</strong>.) Be careful with the connections of the red and black meter probes; remember that the meter assumes that current enters on the red probe. You must also be careful to note whether the meter reads a positive or negative value.</p>
+<p><img src="images/Lab2Fig3.svg" alt="Measuring current out of node B" class="displayed" />&#160;</p></li>
+<li><p>Compute the sum of the three current values: <em>I</em><sub>OB1</sub>, <em>I</em><sub>OB2</sub>, and <em>I</em><sub>OB3</sub>. Does this calculation appear to be consistent with KCL, if we state KCL as &quot;the sum of the currents leaving any node is zero&quot; and we accept that a small measurement error is inevitable? Explain your answer.</p></li>
+<li><p>Measure the three currents <strong>entering</strong> node <strong>C</strong>, as shown in the image below. These three currents flow into node <strong>C</strong> through two resistors (R1 and R2) and from the negative terminal of the voltage source. Be careful with the connections of the red and black meter probes.</p>
+<p><img src="images/Lab2Fig4.svg" alt="Measuring current in to node C" class="displayed" />&#160;</p></li>
+<li><p>Compute the sum of the three current values: <em>I</em><sub>IC1</sub>, <em>I</em><sub>IC2</sub>, and <em>I</em><sub>ICS</sub>. Does this calculation appear to be consistent with KCL, if we state KCL as &quot;the sum of the currents entering any node is zero&quot; and we accept that a small measurement error is inevitable? Explain your answer.</p></li>
+<li><p>How does your earlier measurement of <em>I</em><sub>OB1</sub> compare with the measured value of <em>I</em><sub>ICS</sub>? Do these two measurements seem to be consistent with your understanding of how current behaves in a circuit? Explain your answer.</p></li>
+<li><p><img src="images/GenericWarning11.svg" alt="Warning" /> As soon as you have finished making current measurements you should reconfigure your multimeter for measuring voltage. This will reduce the risk of accidentally blowing a fuse in your meter.</p></li>
+</ol>
+<p><img src="images/CC_BY_SA_40.png" alt="&quot;Creative Commons Attribution ShareAlike License&quot;" style="width: 10%" /> K. Joseph Hass, 2016</p>
+</body>
+</html>

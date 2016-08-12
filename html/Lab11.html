@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+      p {
+          line-height      : 130%;
+      }
+      code {
+          font-family      : "Courier New", Courier, monospace;
+          font-size        : 100%;
+      }
+      img {
+          vertical-align   : baseline;
+          margin           : 0;
+          padding          : 0;
+          border           : none;
+      }
+      img.displayed {
+          max-width        : 100%;
+          height           : auto;
+          display          : block;
+          margin-left      : auto;
+          margin-right     : auto;
+      }
+      img.margin {
+              float: left;
+      }
+      table {
+          margin-left      : auto;
+          margin-right     : auto;
+          margin-bottom    : 24px;
+          border-spacing   : 0;
+          border-bottom    : 2px solid black;
+          border-top       : 2px solid black;}
+      table th {
+          padding          : 3px 10px;
+          background-color : white;
+          border-top       : none;
+          border-left      : none;
+          border-right     : none;
+          border-bottom    : 1px solid black;
+      }
+      table td {
+          padding          : 3px 10px;
+          border-top       : none;
+          border-left      : none;
+          border-bottom    : none;
+          border-right     : none;
+      }
+  </style>
+</head>
+<body>
+<h1 id="bode-plots">Bode Plots</h1>
+<p>In this laboratory procedure you will investigate the frequency response (i.e. transfer function) of an LC filter. You will take measurements at the appropriate frequencies and draw a Bode plot of the results.</p>
+<p>Keep in mind that we use two different kinds of units for <strong>frequency</strong>. The lowercase Greek omega, &#969;, is used for <strong>angular frequency</strong> with units of radians per second. Angular frequency is usually used when working with phasors or trigonometric functions. A lowercase letter <em>f</em> is used for the more conventional notion of frequency and has units of hertz. The relationship between these two units is <span class="math display">\[\omega = 2 \pi f\]</span></p>
+<p>Similarly, we have two ways of describing the phase difference between two sinusoids. When observing two sinusoidal signals on an oscilloscope it is natural to describe the phase difference in units of <strong>time</strong>, such as the amount of time from the peak voltage of one signal to the peak voltage of the other signal, or the time from when one signal rises through 0&#160;V to when the other signal rises through the same voltage. We can also describe the phase difference as a fraction of the period of the sinusoidal signal. When working with phasors this fraction has units of <strong>degrees</strong>, where one cycle of the sinusoid (i.e. one period) is equivalent to 360&#176;. The phase difference in degrees is commonly called the <strong>phase shift</strong>, and the two forms are related by <span class="math display">\[PhaseShift(^\circ) = \frac{PhaseDelay(\mathrm{s})}{Period} \times 360^\circ = PhaseDelay(\mathrm{s}) \times f \times 360^\circ\]</span></p>
+<h3 id="procedure">Procedure</h3>
+<ol type="1">
+<li><p>Consider the filter shown below. The configuration of elements inside the dashed rectangle is called a <em><span class="math inline">\(\pi\)</span></em> filter. Based on your understanding of impedance for inductors and capacitors, is this a low-pass filter or a high-pass filter? <strong>Justify</strong> your answer.</p>
+<p><img src="images/Lab11Fig1.svg" alt="Schematic of L C Pi Filter" class="displayed" />&#160;</p></li>
+<li><p>Construct the filter, using a function generator to supply the input voltage. Configure the function generator to supply a sine wave of 2&#160;V peak-to-peak, as verified with an oscilloscope.</p></li>
+<li><p><strong>Measure</strong> and <strong>record</strong> the peak-to-peak amplitude and phase delay of the output voltage, <em>V</em><sub>OUT</sub>, with respect to <em>V</em><sub>IN</sub>, for each of these frequencies: 100&#160;Hz, 200&#160;Hz, 500&#160;Hz, 1&#160;kHz, 2&#160;kHz, 5&#160;kHz, 10&#160;kHz, 20&#160;kHz, 50&#160;kHz, and 100&#160;kHz.<br />
+<img src="images/GenericWarning11.svg" alt="Warning" /><strong>Verify</strong> that the input voltage is still 2&#160;V peak-to-peak <strong>every time you change the frequency</strong>. When you change the signal frequency the impedance of the filter will also change, and since the signal generator is not an ideal voltage source it's possible that the amplitude of <em>V</em><sub>IN</sub> will change.</p></li>
+<li><p><strong>Calculate</strong> and <strong>record</strong> the gain of the circuit in both volts/volt and decibels for each test frequency.</p></li>
+<li><p><strong>Calculate</strong> and <strong>record</strong> the period of each test frequency and the corresponding phase shift of the output, in degrees.</p></li>
+<li><p>Plot the gain and phase of the filter on semilog graph paper. Plot the gain in the upper half of the paper, using a vertical scale of 20&#160;dB per division. Plot the phase shift in the lower half of the paper, using a vertical scale of 45&#176; per division. Note that your frequency range may not fill the horizontal space of the graph paper.</p></li>
+<li><p>This filter has two poles (i.e. a double pole) at the same frequency. <strong>Calculate</strong> and <strong>record</strong> the pole frequency in <strong>hertz</strong>. <span class="math display">\[\omega_o = \frac{1}{\sqrt{LC}}\]</span></p></li>
+<li><p>Is the shape of your plotted gain and phase data consistent with your understanding of how a Bode plot should look for this filter, given the number and frequency of its poles? <strong>Explain</strong> your answer.</p></li>
+</ol>
+<p><img src="images/CC_BY_SA_40.png" alt="&quot;Creative Commons Attribution ShareAlike License&quot;" style="width: 10%" /> K. Joseph Hass, 2016</p>
+</body>
+</html>
